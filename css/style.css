@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*-----------------------STYLE GÉNÉRAUX---------------------------*/
+header {
+  background-color: #0077B6;
+}
+
+/*-----------------------BANNIÈRE---------------------------*/
+/*bannière étudiante début*/
+.banner {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03045E;
+  color: white;
+}
+.banner .link {
+  margin-left: 5px;
+  color: #0077B6;
+}
+
+/*bannière étudiante fin*/
+/*-----------------------HEADER---------------------------*/
+/*Menu de navigation début*/
+.full-menu {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.full-menu .vertical-line {
+  border-left: 1.5px solid black;
+  height: 25px;
+}
+
+.donation {
+  background-color: #5786FF;
+  border: none;
+  color: white;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.language {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  z-index: 9;
+}
+
+/*Menu de navigation fin*/
+@media screen and (min-width: 800px) {
+  .Hamburger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .full-menu {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

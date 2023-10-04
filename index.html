@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Promis - Les 3 Mousquetaires</title>
 </head>
+
+<div class="banner">Ce site est un travail étudiant. Pour visiter le vrai site cliquer sur le lien suivant: <a
+        class="banner link" href="https://promis.qc.ca/fr/"> Promis|Aide aux immigrants et réfugiés à Montréal</a></div>
+
 <body>
-    <h1>Équipe :</h1>
-    <h2>Les 3 Mousquetaires</h2>
-    <h1>Client :</h1>
-    <h2>Promis</h2>
-    <h1>Lien Github :</h1>
-    <h2>
-        <a href="https://github.com/Vanounais/promis-les-3-mousquetaires">promis-les-3-mousquetaires</a>
-    </h2>
+    <header>
+        <div class="menu">
+        <div class="full-menu">
+            <a href="index.html"><img src="./sources/médias/Logo.png" alt="logo"></a>
+            <a>Accueil</a>
+            <div class="vertical-line"></div>
+            <a>Hub de nouvelles</a>
+            <div class="vertical-line"></div>
+            <a>Hub de services</a>
+            <div class="vertical-line"></div>
+            <a>Équipe</a>
+            <div class="vertical-line"></div>
+            <a>À propos</a>
+            <div class="vertical-line"></div>
+            <a>Histoire</a>
+            <div class="vertical-line"></div>
+            <a>FAQ</a>
+            <div class="menu right">
+                <button class="donation">Dons</button>
+                <img class="language" src="./sources/médias/language.png" alt="language">
+            </div>
+       </div>
+<!--MENU DÉROULANT-->
+<div class="Hamburger-menu">
+    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Accueil</a></li>
+      <li><a class="dropdown-item" href="#">Hub de nouvelles</a></li>
+      <li><a class="dropdown-item" href="#">Hub de services</a></li>
+      <li><a class="dropdown-item" href="#">Équipe</a></li>
+      <li><a class="dropdown-item" href="#">À propos</a></li>
+      <li><a class="dropdown-item" href="#">Histoire</a></li>
+      <li><a class="dropdown-item" href="#">FAQ</a></li>
+    </ul>
+  </div>
+
+ </div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
