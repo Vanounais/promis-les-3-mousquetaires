@@ -48,6 +48,11 @@ header {
     width: 80px;
     height: 25px;
     border-radius: 5px;
+    &-hamburger{
+        background-color: #5786FF;
+        border: none;
+        color: white;    
+    }
 }
 
 .language {
@@ -55,14 +60,33 @@ header {
     height: 25px;
     margin-left: 10px;
     z-index: 9;
+    &-hamburger{
+        width: 25px;
+        height: 25px;  
+    }
 }
 
 /*Menu de navigation fin*/
 
 @media screen and (min-width: 800px) { 
-    .Hamburger-menu { display: none; }
+    .mobile-menu { display: none; }
   }
 
   @media screen and (max-width: 800px) { 
     .full-menu { display: none; }
+    .mobile-menu{display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
   }
+
+.banner{
+.bi-x-lg{
+margin-left: 20px;  
+cursor: pointer;  
+}    
+}  
+
+.dropdown-menu{
+text-align: center;    
+}

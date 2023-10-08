@@ -41,6 +41,11 @@ header {
   height: 25px;
   border-radius: 5px;
 }
+.donation-hamburger {
+  background-color: #5786FF;
+  border: none;
+  color: white;
+}
 
 .language {
   width: 25px;
@@ -48,10 +53,14 @@ header {
   margin-left: 10px;
   z-index: 9;
 }
+.language-hamburger {
+  width: 25px;
+  height: 25px;
+}
 
 /*Menu de navigation fin*/
 @media screen and (min-width: 800px) {
-  .Hamburger-menu {
+  .mobile-menu {
     display: none;
   }
 }
@@ -59,4 +68,17 @@ header {
   .full-menu {
     display: none;
   }
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.banner .bi-x-lg {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
