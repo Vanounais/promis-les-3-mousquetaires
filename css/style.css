@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*-----------------------STYLE GÉNÉRAUX---------------------------*/
+html {
+  background-color: #CAF0F8;
+}
+
 header {
   background-color: #0077B6;
 }
@@ -72,6 +76,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .banner {
+    font-size: 12px;
   }
 }
 .banner .bi-x-lg {
