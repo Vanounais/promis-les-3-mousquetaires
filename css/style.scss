@@ -211,3 +211,45 @@ border: #001D3D solid 3px;
 width: 150px;
 height: 150px;
 }
+
+
+/*-------------------------------------------------------------------------*/
+.swiper {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    border-radius: 20px;
+    background-color: blue;
+    width:30vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .swiper-slide img {
+    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: translate(-20px,-60px); 
+  }
+  
+  .card-text{
+    color: lightgray;
+    width: 90%;
+    align-self: center;
+    margin: 25vh 0 0 0;
+  }
