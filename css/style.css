@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*-----------------------STYLE GÉNÉRAUX---------------------------*/
-html {
+body {
   background-color: #CAF0F8;
 }
 
@@ -22,6 +22,16 @@ header {
   margin-left: 5px;
   color: #0077B6;
 }
+.banner .link:hover {
+  color: #ffffff;
+}
+.banner .bi-x-lg {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.banner .bi-x-lg :hover {
+  color: #0077B6;
+}
 
 /*bannière étudiante fin*/
 /*-----------------------HEADER---------------------------*/
@@ -36,6 +46,12 @@ header {
   border-left: 1.5px solid black;
   height: 25px;
 }
+.full-menu .pages {
+  color: #001D3D;
+}
+.full-menu .pages:hover {
+  color: #ffffff;
+}
 
 .donation {
   background-color: #5786FF;
@@ -48,7 +64,11 @@ header {
 .donation-hamburger {
   background-color: #5786FF;
   border: none;
-  color: white;
+  color: #ffffff;
+}
+.donation:hover {
+  color: #ffffff;
+  background-color: #03045E;
 }
 
 .language {
@@ -62,13 +82,38 @@ header {
   height: 25px;
 }
 
+.dropdown-menu {
+  text-align: center;
+  background-color: #CAF0F8;
+}
+
 /*Menu de navigation fin*/
-@media screen and (min-width: 800px) {
+/*Navbar responsive ordi début*/
+@media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+  .banner {
+    font-size: 14px;
+  }
+  .banner .text {
+    margin: 5px;
+  }
+  .banner .link {
+    margin: 5px;
+  }
+  .banner .bi-x-lg {
+    margin: 5px;
+  }
+}
+/*Navbar responsive ordi fin*/
+/*Navbar responsive tablette début*/
+@media screen and (max-width: 768px) {
   .full-menu {
     display: none;
   }
@@ -81,11 +126,44 @@ header {
     font-size: 12px;
   }
 }
-.banner .bi-x-lg {
-  margin-left: 20px;
-  cursor: pointer;
+/*Navbar responsive tablette fin*/
+/*Navbar responsive mobile début*/
+@media screen and (max-width: 375px) {
+  .full-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-menu .logo-hamburger-menu {
+    margin: 5px;
+  }
+  .banner {
+    font-size: 10px;
+  }
+  .banner .text {
+    margin: 5px;
+  }
+  .banner .link {
+    margin: 5px;
+  }
+  .banner .bi-x-lg {
+    margin: 5px;
+  }
 }
-
-.dropdown-menu {
-  text-align: center;
+/*Navbar responsive mobile fin*/
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.hero .carousel {
+  width: 500px;
+  height: 500px;
+}
+.hero .region {
+  width: 400px;
+  height: 400px;
 }/*# sourceMappingURL=style.css.map */
