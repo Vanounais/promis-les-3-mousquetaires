@@ -93,6 +93,10 @@ header {
   .mobile-menu {
     display: none;
   }
+  .services-icons {
+    margin: auto;
+    width: 650px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .mobile-menu {
@@ -110,6 +114,10 @@ header {
   .banner .bi-x-lg {
     margin: 5px;
   }
+  .services-icons {
+    margin: auto;
+    width: 650px;
+  }
 }
 /*Navbar responsive ordi fin*/
 /*Navbar responsive tablette début*/
@@ -124,6 +132,10 @@ header {
   }
   .banner {
     font-size: 12px;
+  }
+  .services-icons {
+    margin: auto;
+    width: 350px;
   }
 }
 /*Navbar responsive tablette fin*/
@@ -152,6 +164,10 @@ header {
   .banner .bi-x-lg {
     margin: 5px;
   }
+  .services-icons {
+    margin: auto;
+    width: 150px;
+  }
 }
 /*Navbar responsive mobile fin*/
 .hero {
@@ -160,10 +176,26 @@ header {
   margin-top: 50px;
 }
 .hero .carousel {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 .hero .region {
   width: 400px;
   height: 400px;
+}
+
+.test {
+  width: 400px;
+  height: 400px;
+}
+
+.services {
+  text-align: center;
+}
+
+.square {
+  display: inline-block;
+  border: #001D3D solid 3px;
+  width: 150px;
+  height: 150px;
 }/*# sourceMappingURL=style.css.map */
