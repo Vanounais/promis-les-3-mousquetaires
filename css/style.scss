@@ -1,14 +1,16 @@
 /*-----------------------STYLE GÉNÉRAUX---------------------------*/
 
-body{
-background-color: #CAF0F8;    
+body {
+    background-color: #CAF0F8;
 }
 
 header {
     background-color: #0077B6;
 }
 
+
 /*-----------------------BANNIÈRE---------------------------*/
+
 
 /*bannière étudiante début*/
 
@@ -19,27 +21,28 @@ header {
     justify-content: center;
     background-color: #03045E;
     color: white;
-
-    .link{
+    .link {
         margin-left: 5px;
         color: #0077B6;
-        &:hover{
-        color: #ffffff;
+        &:hover {
+            color: #ffffff;
+        }
     }
-    }
-        
-    .bi-x-lg{
-        margin-left: 20px;  
-        cursor: pointer;  
-        :hover{
+    .bi-x-lg {
+        margin-left: 20px;
+        cursor: pointer;
+         :hover {
             color: #0077B6;
-           }
-        } 
+        }
+    }
 }
+
 
 /*bannière étudiante fin*/
 
+
 /*-----------------------HEADER---------------------------*/
+
 
 /*Menu de navigation début*/
 
@@ -52,13 +55,12 @@ header {
         border-left: 1.5px solid black;
         height: 25px;
     }
-    .pages{
-        color: #001D3D;   
-        &:hover{
+    .pages {
+        color: #001D3D;
+        &:hover {
             color: #ffffff;
-           } 
-        }    
-        
+        }
+    }
 }
 
 .donation {
@@ -68,14 +70,14 @@ header {
     width: 80px;
     height: 25px;
     border-radius: 5px;
-    &-hamburger{
+    &-hamburger {
         background-color: #5786FF;
         border: none;
-        color: #ffffff;    
+        color: #ffffff;
     }
-    &:hover{
-    color: #ffffff; 
-    background-color: #03045E;   
+    &:hover {
+        color: #ffffff;
+        background-color: #03045E;
     }
 }
 
@@ -84,172 +86,174 @@ header {
     height: 25px;
     margin-left: 10px;
     z-index: 9;
-    &-hamburger{
+    &-hamburger {
         width: 25px;
-        height: 25px;  
+        height: 25px;
     }
 }
 
-.dropdown-menu{
-    text-align: center;    
+.dropdown-menu {
+    text-align: center;
     background-color: #CAF0F8;
-    }
+}
+
 
 /*Menu de navigation fin*/
 
+
 /*Navbar responsive ordi début*/
 
-@media screen and (min-width: 1200px) { 
-    .mobile-menu { display: none; }
-    .services-icons{
-        margin: auto;  
-        width: 650px;  
-        }
+@media screen and (min-width: 1200px) {
+    .mobile-menu {
+        display: none;
+    }
+    .services-icons {
+        margin: auto;
+        width: 650px;
+    }
 }
 
-  @media screen and (max-width: 1200px) { 
-    .mobile-menu { display: none;} 
-        .banner{
-            font-size: 14px;
-            .text{
-                margin: 5px;
-            }
-            .link{
-                margin: 5px;
-            }
-            .bi-x-lg{
-                margin: 5px;
-            }
-        }    
-        .services-icons{
-            margin: auto;  
-            width: 650px;  
-            }
-  }
+@media screen and (max-width: 1200px) {
+    .mobile-menu {
+        display: none;
+    }
+    .banner {
+        font-size: 14px;
+        .text {
+            margin: 5px;
+        }
+        .link {
+            margin: 5px;
+        }
+        .bi-x-lg {
+            margin: 5px;
+        }
+    }
+    .services-icons {
+        margin: auto;
+        width: 650px;
+    }
+}
+
 
 /*Navbar responsive ordi fin*/
 
+
 /*Navbar responsive tablette début*/
 
-  @media screen and (max-width: 768px) { 
-    .full-menu { display: none; }
-    .mobile-menu{display: flex;
+@media screen and (max-width: 768px) {
+    .full-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .banner{
+    .banner {
         font-size: 12px;
-  }
-  .services-icons{
-    margin: auto;  
-    width: 350px;  
+    }
+    .services-icons {
+        margin: auto;
+        width: 350px;
     }
 }
+
 
 /*Navbar responsive tablette fin*/
 
+
 /*Navbar responsive mobile début*/
 
-  @media screen and (max-width: 375px) { 
-    .full-menu { display: none; }
-    .mobile-menu{display: flex;
+@media screen and (max-width: 375px) {
+    .full-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo-hamburger-menu{
-        margin: 5px;    
+        .logo-hamburger-menu {
+            margin: 5px;
         }
     }
-    .banner{
+    .banner {
         font-size: 10px;
-        .text{
+        .text {
             margin: 5px;
         }
-        .link{
+        .link {
             margin: 5px;
         }
-        .bi-x-lg{
+        .bi-x-lg {
             margin: 5px;
         }
     }
-    .services-icons{
-        margin: auto;  
-        width: 150px;  
-        }
+    .services-icons {
+        margin: auto;
+        width: 150px;
+    }
+}
 
-  }
 
 /*Navbar responsive mobile fin*/
 
-.hero{
-display: flex; 
-justify-content: space-around;   
-margin-top: 50px;
-.carousel{   
-width: 400px;
-height: 400px;
-
+.hero {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    .carousel {
+        width: 400px;
+        height: 400px;
+    }
+    .region {
+        width: 400px;
+        height: 400px;
+    }
 }
-.region{
+
+.test {
     width: 400px;
-    height: 400px;    
-}
-}
-
-
-.test{
-width: 400px;
-height: 400px;    
+    height: 400px;
 }
 
-.services{  
-text-align: center;
+.services {
+    text-align: center;
 }
 
-.square{
-display: inline-block;
-border: #001D3D solid 3px;    
-width: 150px;
-height: 150px;
+.square {
+    display: inline-block;
+    border: #001D3D solid 3px;
+    width: 150px;
+    height: 150px;
 }
 
 
 /*-------------------------------------------------------------------------*/
+
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .card {
-    border-radius: 20px;
-    background-color: blue;
-    width:30vh;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
-  
-  .swiper-slide img {
-    position: absolute;
-    width: 30vh;
-    height: 30vh;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 20px;
-    transform: translate(-20px,-60px); 
-  }
-  
-  .card-text{
+}
+
+.card-text {
     color: lightgray;
     width: 90%;
     align-self: center;
     margin: 25vh 0 0 0;
-  }
+}
