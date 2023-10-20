@@ -4,10 +4,10 @@ body{
 background-color: #CAF0F8;    
 }
 
-header {
+/*header {
     background-color: #0077B6;
 }
-
+*/
 
 /*-----------------------BANNIÈRE---------------------------*/
 
@@ -43,7 +43,7 @@ header {
 /*-----------------------HEADER---------------------------*/
 
 /*Menu de navigation début*/
-
+/*
 .full-menu {
     height: 50px;
     display: flex;
@@ -95,13 +95,13 @@ header {
     text-align: center;    
     background-color: #CAF0F8;
     }
+*/
 
-/*Menu de navigation fin*/
+.hamburger-menu{}
 
-/*Navbar responsive ordi début*/
 
 @media screen and (min-width: 1200px) { 
-    .mobile-menu { display: none; }
+    /*.mobile-menu { display: none; }*/
     .services-icons{
         margin: auto;  
         width: 650px;  
@@ -109,7 +109,7 @@ header {
 }
 
   @media screen and (max-width: 1200px) { 
-    .mobile-menu { display: none;} 
+    /*.mobile-menu { display: none;} */
         .banner{
             font-size: 14px;
             .text{
@@ -128,16 +128,13 @@ header {
             }
   }
 
-/*Navbar responsive ordi fin*/
-
-/*Navbar responsive tablette début*/
 
   @media screen and (max-width: 768px) { 
-    .full-menu { display: none; }
+    /*.full-menu { display: none; }
     .mobile-menu{display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    }*/
     .banner{
         font-size: 12px;
   }
@@ -147,18 +144,14 @@ header {
     }
 }
 
-/*Navbar responsive tablette fin*/
-
-/*Navbar responsive mobile début*/
-
   @media screen and (max-width: 375px) { 
-    .full-menu { display: none; }
+    /*.full-menu { display: none; }
     .mobile-menu{display: flex;
         justify-content: space-between;
         align-items: center;
         .logo-hamburger-menu{
         margin: 5px;    
-        }
+        }*/
     }
     .banner{
         font-size: 10px;
@@ -177,7 +170,7 @@ header {
         width: 150px;  
         }
 
-  }
+  
 
 /*Navbar responsive mobile fin*/
 

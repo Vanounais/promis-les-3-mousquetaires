@@ -4,10 +4,10 @@ body {
   background-color: #CAF0F8;
 }
 
-header {
-  background-color: #0077B6;
+/*header {
+    background-color: #0077B6;
 }
-
+*/
 /*-----------------------BANNIÈRE---------------------------*/
 /*bannière étudiante début*/
 .banner {
@@ -36,72 +36,68 @@ header {
 /*bannière étudiante fin*/
 /*-----------------------HEADER---------------------------*/
 /*Menu de navigation début*/
+/*
 .full-menu {
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.full-menu .vertical-line {
-  border-left: 1.5px solid black;
-  height: 25px;
-}
-.full-menu .pages {
-  color: #001D3D;
-}
-.full-menu .pages:hover {
-  color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .vertical-line {
+        border-left: 1.5px solid black;
+        height: 25px;
+    }
+    .pages{
+        color: #001D3D;   
+        &:hover{
+            color: #ffffff;
+           } 
+        }    
+
 }
 
 .donation {
-  background-color: #5786FF;
-  border: none;
-  color: white;
-  width: 80px;
-  height: 25px;
-  border-radius: 5px;
-}
-.donation-hamburger {
-  background-color: #5786FF;
-  border: none;
-  color: #ffffff;
-}
-.donation:hover {
-  color: #ffffff;
-  background-color: #03045E;
+    background-color: #5786FF;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    &-hamburger{
+        background-color: #5786FF;
+        border: none;
+        color: #ffffff;    
+    }
+    &:hover{
+    color: #ffffff; 
+    background-color: #03045E;   
+    }
 }
 
 .language {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
-  z-index: 9;
-}
-.language-hamburger {
-  width: 25px;
-  height: 25px;
-}
-
-.dropdown-menu {
-  text-align: center;
-  background-color: #CAF0F8;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    z-index: 9;
+    &-hamburger{
+        width: 25px;
+        height: 25px;  
+    }
 }
 
-/*Menu de navigation fin*/
-/*Navbar responsive ordi début*/
+.dropdown-menu{
+    text-align: center;    
+    background-color: #CAF0F8;
+    }
+*/
 @media screen and (min-width: 1200px) {
-  .mobile-menu {
-    display: none;
-  }
+  /*.mobile-menu { display: none; }*/
   .services-icons {
     margin: auto;
     width: 650px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .mobile-menu {
-    display: none;
-  }
+  /*.mobile-menu { display: none;} */
   .banner {
     font-size: 14px;
   }
@@ -119,17 +115,12 @@ header {
     width: 650px;
   }
 }
-/*Navbar responsive ordi fin*/
-/*Navbar responsive tablette début*/
 @media screen and (max-width: 768px) {
-  .full-menu {
-    display: none;
-  }
-  .mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  /*.full-menu { display: none; }
+  .mobile-menu{display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }*/
   .banner {
     font-size: 12px;
   }
@@ -138,37 +129,33 @@ header {
     width: 350px;
   }
 }
-/*Navbar responsive tablette fin*/
-/*Navbar responsive mobile début*/
 @media screen and (max-width: 375px) {
-  .full-menu {
-    display: none;
-  }
-  .mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mobile-menu .logo-hamburger-menu {
-    margin: 5px;
-  }
-  .banner {
-    font-size: 10px;
-  }
-  .banner .text {
-    margin: 5px;
-  }
-  .banner .link {
-    margin: 5px;
-  }
-  .banner .bi-x-lg {
-    margin: 5px;
-  }
-  .services-icons {
-    margin: auto;
-    width: 150px;
-  }
+  /*.full-menu { display: none; }
+  .mobile-menu{display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo-hamburger-menu{
+      margin: 5px;    
+      }*/
 }
+.banner {
+  font-size: 10px;
+}
+.banner .text {
+  margin: 5px;
+}
+.banner .link {
+  margin: 5px;
+}
+.banner .bi-x-lg {
+  margin: 5px;
+}
+
+.services-icons {
+  margin: auto;
+  width: 150px;
+}
+
 /*Navbar responsive mobile fin*/
 .hero {
   display: flex;
