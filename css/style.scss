@@ -8,6 +8,7 @@ header {
     background-color: #0077B6;
 }
 
+
 /*-----------------------BANNIÈRE---------------------------*/
 
 /*bannière étudiante début*/
@@ -203,6 +204,7 @@ height: 400px;
 
 .services{  
 text-align: center;
+margin-top: 100px;
 }
 
 .square{
@@ -213,10 +215,11 @@ height: 150px;
 }
 
 
-/*-------------------------------------------------------------------------*/
+/*----------------------------------Swiper---------------------------------------*/
 .swiper {
     width: 50%;
     height: 100%;
+    margin-top: 100px;
   }
   
   .swiper-slide {
@@ -253,3 +256,88 @@ height: 150px;
     align-self: center;
     margin: 25vh 0 0 0;
   }
+
+
+  /*----------------------------------Nouvelles---------------------------------------*/
+
+  .news{
+  text-align: center;  
+  margin-top: 100px;
+  margin-bottom: 100px;
+  &-image{
+width: 400px;
+height: 300px;
+margin: 10px;
+border-radius: 21px;
+box-shadow:10px 120px #0077B6;
+  }
+  &-card{
+  display: inline-block;  
+  color: white;
+  }
+  .date{
+ font-size: 12px;
+  }
+  &-text{
+  font-size: 30px;  
+  }
+  &-link{
+  color: #001D3D;  
+  text-decoration: underline;
+  }
+  }
+
+
+
+    /*----------------------------------Témoignages---------------------------------------*/
+
+
+        .Testimonials {
+            text-align: center;
+            &-card {
+                margin: auto;
+                padding: 20px;
+                background-color: #0077B6;
+                width: 860px;
+                height: 470px;
+                border-radius: 47px;
+                color: white;
+            }
+            &-text {
+                margin: 20px;
+                font-size: 24px
+            }
+            &-image{
+            margin-top: 20px;    
+            margin-bottom: 20px;   
+            }
+            &-writter{
+             font-size: 20px;   
+            }
+        }
+
+   /*----------------------------------Donations---------------------------------------*/
+
+
+.section-donations{
+text-align: center;    
+margin-top: 100px;
+h1{
+color: #03045E;  
+font-size: 48px;  
+}
+h2{
+color: #001D3D;
+font-size: 24px;    
+}
+}        
+
+.donation-button{
+width: 345px;
+height: 100px;
+border: none;
+border-radius: 17px;
+color: white;
+background-color: #0077B6;
+font-size: 36px;
+}

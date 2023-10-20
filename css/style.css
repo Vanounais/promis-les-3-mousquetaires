@@ -191,6 +191,7 @@ header {
 
 .services {
   text-align: center;
+  margin-top: 100px;
 }
 
 .square {
@@ -200,10 +201,11 @@ header {
   height: 150px;
 }
 
-/*-------------------------------------------------------------------------*/
+/*----------------------------------Swiper---------------------------------------*/
 .swiper {
   width: 50%;
   height: 100%;
+  margin-top: 100px;
 }
 
 .swiper-slide {
@@ -240,4 +242,81 @@ header {
   width: 90%;
   align-self: center;
   margin: 25vh 0 0 0;
+}
+
+/*----------------------------------Nouvelles---------------------------------------*/
+.news {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.news-image {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 21px;
+  box-shadow: 10px 120px #0077B6;
+}
+.news-card {
+  display: inline-block;
+  color: white;
+}
+.news .date {
+  font-size: 12px;
+}
+.news-text {
+  font-size: 30px;
+}
+.news-link {
+  color: #001D3D;
+  text-decoration: underline;
+}
+
+/*----------------------------------Témoignages---------------------------------------*/
+.Testimonials {
+  text-align: center;
+}
+.Testimonials-card {
+  margin: auto;
+  padding: 20px;
+  background-color: #0077B6;
+  width: 860px;
+  height: 470px;
+  border-radius: 47px;
+  color: white;
+}
+.Testimonials-text {
+  margin: 20px;
+  font-size: 24px;
+}
+.Testimonials-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Testimonials-writter {
+  font-size: 20px;
+}
+
+/*----------------------------------Donations---------------------------------------*/
+.section-donations {
+  text-align: center;
+  margin-top: 100px;
+}
+.section-donations h1 {
+  color: #03045E;
+  font-size: 48px;
+}
+.section-donations h2 {
+  color: #001D3D;
+  font-size: 24px;
+}
+
+.donation-button {
+  width: 345px;
+  height: 100px;
+  border: none;
+  border-radius: 17px;
+  color: white;
+  background-color: #0077B6;
+  font-size: 36px;
 }/*# sourceMappingURL=style.css.map */
