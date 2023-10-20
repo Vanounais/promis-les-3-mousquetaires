@@ -267,14 +267,22 @@ header {
 footer {
     text-align: center;
     display: block;
-    background-color: #03045E;
-    padding-top: 6vh;
-    padding-bottom: 3vh;
-    color: #ffffff;
+    background-color: #0077B6;
+    height: 200px;
+    width: auto;
+    position: relative;
+
+    .crediting {
+        display: block;
+        padding-top: 6vh;
+        background-color: #03045E;
+        padding-bottom: 3vh;
+        color: #ffffff;
+    }   
 }
 
-.crediting {
-    display: block;
+.links {
+ height: 20vh;
 }
 
 .logos {
