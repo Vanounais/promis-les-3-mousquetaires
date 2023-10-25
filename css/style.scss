@@ -271,18 +271,51 @@ footer {
     height: 200px;
     width: auto;
     position: relative;
-
     .crediting {
         display: block;
         padding-top: 6vh;
         background-color: #03045E;
         padding-bottom: 3vh;
         color: #ffffff;
-    }   
+    }
 }
 
-.links {
- height: 20vh;
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    a {
+        color: white;
+        margin: 2px;
+    }
+}
+
+.goofy-line {
+    margin: auto;
+    width: 90%;
+    background-color: black;
+    height: 2px;
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    p {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
 }
 
 .logos {
