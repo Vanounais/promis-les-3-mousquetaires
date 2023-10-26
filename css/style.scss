@@ -20,7 +20,6 @@ background-color: #CAF0F8;
     justify-content: center;
     background-color: #03045E;
     color: white;
-
     .link{
         margin-left: 5px;
         color: #0077B6;
@@ -97,8 +96,6 @@ background-color: #CAF0F8;
     }
 */
 
-.hamburger-menu{}
-
 
 @media screen and (min-width: 1200px) { 
     /*.mobile-menu { display: none; }*/
@@ -111,7 +108,7 @@ background-color: #CAF0F8;
   @media screen and (max-width: 1200px) { 
     /*.mobile-menu { display: none;} */
         .banner{
-            font-size: 14px;
+            font-size: 18px;
             .text{
                 margin: 5px;
             }
@@ -151,10 +148,8 @@ background-color: #CAF0F8;
         align-items: center;
         .logo-hamburger-menu{
         margin: 5px;    
-        }*/
-    }
-    .banner{
-        font-size: 10px;
+        }*/.banner{
+        font-size: 20px;
         .text{
             margin: 5px;
         }
@@ -169,6 +164,8 @@ background-color: #CAF0F8;
         margin: auto;  
         width: 150px;  
         }
+    }
+    
 
   
 
@@ -209,46 +206,6 @@ height: 150px;
 
 
 /*----------------------------------Swiper---------------------------------------*/
-.swiper {
-    width: 50%;
-    height: 100%;
-    margin-top: 100px;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card {
-    border-radius: 20px;
-    background-color: blue;
-    width:30vh;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
-  
-  .swiper-slide img {
-    position: absolute;
-    width: 30vh;
-    height: 30vh;
-    object-fit: cover;
-    border-radius: 20px;
-    transform: translate(-20px,-60px); 
-  }
-  
-  .card-text{
-    color: lightgray;
-    width: 90%;
-    align-self: center;
-    margin: 25vh 0 0 0;
-  }
 
 
   /*----------------------------------Nouvelles---------------------------------------*/
@@ -334,3 +291,135 @@ color: white;
 background-color: #0077B6;
 font-size: 36px;
 }
+
+/*-----------------------------------------Navbar---------------------------------------*/
+
+.navbar{
+background-color: #0077B6;
+}
+
+
+
+.navbar-nav{
+margin:auto; 
+font-size: 18px;
+.nav-link{
+color: #001D3D;    
+}
+
+.nav-link:hover{
+    color: white;    
+    }
+
+.donation{
+border: none;
+background-color: #5786FF;    
+border-radius: 6px;
+margin-left: 5px;
+}
+
+.donation:hover{
+ background-color: white;
+ color: #001D3D; 
+    }
+}
+
+.hamburger-menu{
+width: 30px;
+height: 30px;    
+}
+
+.bi-piggy-bank{
+margin-left: 5px;    
+}
+
+.bi-globe{
+margin-left: 10px; 
+color: black;
+cursor: pointer;  
+&:hover{
+color:white;    
+}
+}
+
+
+
+/*-----------------------------------------Équipe---------------------------------------*/
+
+
+.hero-team{
+display:flex;
+justify-content:space-around;
+text-align: center; 
+background-color: white;
+height: 200px;
+margin-bottom: 50px;
+.title-team{
+padding-top:75px;  
+}
+}
+
+.card-team{
+background-color: #0077B6; 
+text-align: center;
+width: 800px;
+margin: auto;
+color: #001D3D;
+border: none;
+border-radius: 15px;
+.team-image{
+width: 300px;
+height: 300px;    
+text-align: center;
+margin: auto;
+border-radius: 150px;
+}
+&:hover{
+    box-shadow: 10px 10px 20px #013552;   
+    top: -5px; 
+}
+}
+
+
+/*-----------------------------------------À propos---------------------------------------*/
+
+
+.about-description{
+text-align: center;
+font-size: 25px;    
+padding-left: 100px;
+padding-right: 100px;
+}
+.title-about{
+padding-top:75px;  
+font-size: 48px;
+}
+
+
+
+/*-----------------------------------------Histoire---------------------------------------*/
+
+.history-video{
+display: flex;
+align-items: center;
+justify-content: center;    
+margin-bottom: 50px;
+}
+
+.history-description{
+    margin: auto;
+    text-align: center;
+    font-size: 25px;    
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #0077B6;
+    color: #001D3D;
+    width: 1500px;
+    padding: 30px;
+    border-radius: 50px;
+    }
+    .title-history{
+    padding-top:75px;  
+    font-size: 48px;
+    }
+    
