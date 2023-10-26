@@ -274,23 +274,13 @@ text-align: center;
 margin-top: 100px;
 h1{
 color: #03045E;  
-font-size: 48px;  
+font-size: 24px;  
 }
 h2{
 color: #001D3D;
 font-size: 24px;    
 }
 }        
-
-.donation-button{
-width: 345px;
-height: 100px;
-border: none;
-border-radius: 17px;
-color: white;
-background-color: #0077B6;
-font-size: 36px;
-}
 
 /*-----------------------------------------Navbar---------------------------------------*/
 
@@ -301,7 +291,7 @@ background-color: #0077B6;
 
 
 .navbar-nav{
-margin:auto; 
+margin:auto;
 font-size: 18px;
 .nav-link{
 color: #001D3D;    
@@ -315,13 +305,17 @@ color: #001D3D;
 border: none;
 background-color: #5786FF;    
 border-radius: 6px;
-margin-left: 5px;
+margin:auto;
+padding:5px;
+color: white;
+text-decoration: none;
+color: white;
 }
 
 .donation:hover{
  background-color: white;
- color: #001D3D; 
-    }
+ color: #001D3D;
+} 
 }
 
 .hamburger-menu{
@@ -423,3 +417,6 @@ margin-bottom: 50px;
     font-size: 48px;
     }
     
+.none{
+display: none;    
+}

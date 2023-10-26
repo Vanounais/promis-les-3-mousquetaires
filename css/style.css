@@ -247,21 +247,11 @@ body {
 }
 .section-donations h1 {
   color: #03045E;
-  font-size: 48px;
+  font-size: 24px;
 }
 .section-donations h2 {
   color: #001D3D;
   font-size: 24px;
-}
-
-.donation-button {
-  width: 345px;
-  height: 100px;
-  border: none;
-  border-radius: 17px;
-  color: white;
-  background-color: #0077B6;
-  font-size: 36px;
 }
 
 /*-----------------------------------------Navbar---------------------------------------*/
@@ -283,7 +273,11 @@ body {
   border: none;
   background-color: #5786FF;
   border-radius: 6px;
-  margin-left: 5px;
+  margin: auto;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  color: white;
 }
 .navbar-nav .donation:hover {
   background-color: white;
@@ -379,4 +373,8 @@ body {
 .title-history {
   padding-top: 75px;
   font-size: 48px;
+}
+
+.none {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
