@@ -218,13 +218,12 @@ body {
 /*----------------------------------Témoignages---------------------------------------*/
 .Testimonials {
   text-align: center;
+  margin: auto;
 }
 .Testimonials-card {
   margin: auto;
   padding: 20px;
   background-color: #0077B6;
-  width: 860px;
-  height: 470px;
   border-radius: 47px;
   color: white;
 }
@@ -243,7 +242,7 @@ body {
 /*----------------------------------Donations---------------------------------------*/
 .section-donations {
   text-align: center;
-  margin-top: 100px;
+  margin: auto;
 }
 .section-donations h1 {
   color: #03045E;
@@ -252,6 +251,19 @@ body {
 .section-donations h2 {
   color: #001D3D;
   font-size: 24px;
+}
+
+.donation-button {
+  height: 60px;
+  border-radius: 7px;
+  padding: 3px;
+  border: none;
+  background-color: #0077B6;
+  color: white;
+}
+.donation-button:hover {
+  background-color: white;
+  color: #001D3D;
 }
 
 /*-----------------------------------------Navbar---------------------------------------*/
@@ -294,12 +306,17 @@ body {
 }
 
 .bi-globe {
-  margin-left: 10px;
   color: black;
   cursor: pointer;
 }
 .bi-globe:hover {
   color: white;
+}
+
+.navbar-collapse {
+  background-color: #CAF0F8;
+  text-align: center;
+  border-radius: 10px;
 }
 
 /*-----------------------------------------Équipe---------------------------------------*/
@@ -365,7 +382,6 @@ body {
   padding-right: 100px;
   background-color: #0077B6;
   color: #001D3D;
-  width: 1500px;
   padding: 30px;
   border-radius: 50px;
 }

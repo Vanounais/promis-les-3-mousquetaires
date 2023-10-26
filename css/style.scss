@@ -244,12 +244,12 @@ box-shadow:10px 120px #0077B6;
 
         .Testimonials {
             text-align: center;
+            margin: auto;
             &-card {
                 margin: auto;
                 padding: 20px;
                 background-color: #0077B6;
-                width: 860px;
-                height: 470px;
+
                 border-radius: 47px;
                 color: white;
             }
@@ -271,7 +271,7 @@ box-shadow:10px 120px #0077B6;
 
 .section-donations{
 text-align: center;    
-margin-top: 100px;
+margin: auto;
 h1{
 color: #03045E;  
 font-size: 24px;  
@@ -280,7 +280,22 @@ h2{
 color: #001D3D;
 font-size: 24px;    
 }
-}        
+}      
+
+.donation{
+&-button{
+height: 60px;
+border-radius: 7px;
+padding: 3px;
+border: none;
+background-color: #0077B6;
+color: white;
+&:hover{
+    background-color: white; 
+    color: #001D3D;   
+}
+}  
+}
 
 /*-----------------------------------------Navbar---------------------------------------*/
 
@@ -328,7 +343,6 @@ margin-left: 5px;
 }
 
 .bi-globe{
-margin-left: 10px; 
 color: black;
 cursor: pointer;  
 &:hover{
@@ -336,7 +350,11 @@ color:white;
 }
 }
 
-
+.navbar-collapse{
+background-color: #CAF0F8;    
+text-align: center;
+border-radius: 10px;
+}
 
 /*-----------------------------------------Équipe---------------------------------------*/
 
@@ -408,7 +426,6 @@ margin-bottom: 50px;
     padding-right: 100px;
     background-color: #0077B6;
     color: #001D3D;
-    width: 1500px;
     padding: 30px;
     border-radius: 50px;
     }
