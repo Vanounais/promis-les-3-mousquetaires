@@ -181,9 +181,18 @@ body {
   }
 }
 .square {
-  border: #001D3D solid 3px;
-  width: 150px;
-  height: 150px;
+  background-color: #5786FF;
+  border-radius: 15px;
+  width: 155px;
+  height: 155px;
+  font-size: 23px;
+  line-height: 1.15;
+  padding: 5px;
+}
+
+.icon {
+  margin: auto;
+  width: 50%;
 }
 
 /*----------------------------------Swiper---------------------------------------*/
