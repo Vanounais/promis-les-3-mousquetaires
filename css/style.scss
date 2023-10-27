@@ -530,26 +530,28 @@ body {
     height: 100vh;
 }
 
+
 .er404-body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.er404-container {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #78daed;
+.er404-container{
+    font-family:Arial, Helvetica, sans-serif;
     border-radius: 20px;
     padding: 10px;
+    margin-top: 20vh;
 }
 
-.er404-h1 {
-    font-size: 100px;
-    margin: 20px;
+
+.er404-h1{
+    font-size: clamp(100px, 20vw, 200px);
+    margin: 20;
     text-align: center;
 }
-
-.er404-div {
+.er404-div{
+    font-size: clamp(12px, 2vw, 24px);
     font-weight: bold;
     text-align: center;
 }
