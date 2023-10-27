@@ -467,3 +467,123 @@ display: none;
     font-weight: bold;
     text-align: center;
 }
+
+/*-----------------------------------Footer---------------------------------------------*/
+footer {
+    text-align: center;
+    display: block;
+    background-color: #0077B6;
+    width: auto;
+    position: relative;
+    .crediting {
+        display: block;
+        padding-top: 6vh;
+        background-color: #03045E;
+        padding-bottom: 3vh;
+        color: #ffffff;
+    }
+}
+
+.allthemshits{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo-bottom{
+    width: 123px;
+    height: 30px;
+    
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    a {
+        color: white;
+        margin: 5px;
+    }
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .donation{
+        margin: 5px;
+    }
+
+    img{
+        width: 4vh;
+        height: 4vh;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-nav {
+        flex-direction: column;
+    }
+    .links {
+        flex-direction: column;
+    }
+}
+
+.goofy-line {
+    margin: auto;
+    width: 90%;
+    background-color: black;
+    height: 2px;
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    p {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5vh;
+}
+
+.credits {
+    padding: 20px;
+    width: 150px;
+    max-height: 120px;
+    object-fit: scale-down;
+}
+
+@media screen and (max-width: 768px) {
+    .credits {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .credits {
+        width: 100px;
+    }
+}
