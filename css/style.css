@@ -286,6 +286,8 @@ body {
   background-color: #5786FF;
   border-radius: 6px;
   margin: auto;
+  margin-left: 10px;
+  margin-right: 15px;
   padding: 5px;
   color: white;
   text-decoration: none;
