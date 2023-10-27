@@ -6,6 +6,7 @@
 ### Hero 
 ### Cards
 ### footer
+
 # Hub de nouvelles
 ## Model news-hub.php
 ## Composante:
@@ -13,6 +14,7 @@
 ### Hero
 ### articles
 ### footer 
+
 # Hub de services
 ## Model services-hub.php
 ## Composante:
@@ -20,12 +22,15 @@
 ### Hero
 ### services cards
 ### footer
+
 # Histoire
 ## Model history.php
+## Type date et année avec descrpition et image
 ## Composante: 
 ### Navbar
 ### Hero
 ### Timebar
+
 # Équipe
 ## Model team.php
 ## Composante:
@@ -33,6 +38,7 @@
 ### Hero
 ### cards
 ### footer
+
 # À propos
 ## Model about.php
 ## Composante:
@@ -40,10 +46,12 @@
 ### Hero
 ### Description
 ### Footer
+
 # FAQ
 ## Model faq.php
 ## Composante:
 ### Navbar
 ### questions and answers (use bootstrap)
+
 # Dons
 # 404
