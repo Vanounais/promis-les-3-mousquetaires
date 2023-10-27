@@ -522,20 +522,12 @@ body {
     height: 100vh;
 }
 
-
-.er404-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .er404-container{
     font-family:Arial, Helvetica, sans-serif;
     border-radius: 20px;
     padding: 10px;
-    margin-top: 20vh;
+    margin: 20vh 0;
 }
-
 
 .er404-h1{
     font-size: clamp(100px, 20vw, 200px);
