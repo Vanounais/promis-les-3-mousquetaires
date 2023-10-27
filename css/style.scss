@@ -363,7 +363,6 @@ display:flex;
 justify-content:space-around;
 text-align: center; 
 background-color: white;
-height: 200px;
 margin-bottom: 50px;
 .title-team{
 padding-top:75px;  
@@ -373,17 +372,17 @@ padding-top:75px;
 .card-team{
 background-color: #0077B6; 
 text-align: center;
-width: 800px;
 margin: auto;
 color: #001D3D;
 border: none;
 border-radius: 15px;
 .team-image{
-width: 300px;
-height: 300px;    
+    max-width: 300px;
+width: 70%;
+height: 70%;    
 text-align: center;
 margin: auto;
-border-radius: 150px;
+border-radius: 150%;
 }
 &:hover{
     box-shadow: 10px 10px 20px #013552;   
