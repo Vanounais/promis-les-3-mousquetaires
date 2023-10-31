@@ -548,6 +548,58 @@ body {
     text-align: center;
 }
 
+
+/*-----------------------------------------Hub de services---------------------------------------*/
+
+
+.nos-services{
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+   padding: 50px;
+}
+
+.services-alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.service {
+    color: white;
+    background-color: #001D3D;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .services-cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        }
+}
+
+@media screen and (max-width: 550px) {
+    .services-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        }
+}
+
+
+
 /*-----------------------------------Footer---------------------------------------------*/
 footer {
     text-align: center;
