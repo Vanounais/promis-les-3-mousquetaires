@@ -308,9 +308,35 @@ body {
   color: #001D3D;
 }
 
+/*
+
 .hamburger-menu {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
+    opacity: 1; 
+} */
+.navbar-toggler {
+  background-color: #0077B6;
+}
+
+.navbar-toggler-icon span {
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  height: 5px;
+  border-radius: 15px;
+}
+
+.bar1 {
+  transform: translate(-20px, 2px);
+}
+
+.bar2 {
+  transform: translate(-20px, 13px);
+}
+
+.bar3 {
+  transform: translate(-20px, 24px);
 }
 
 .bi-piggy-bank {
