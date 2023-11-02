@@ -591,6 +591,8 @@ border: none;
    margin-top: 5vh;
    margin-bottom: 5vh;
    padding: 50px;
+   max-width: 1300px;
+   margin: auto;
 }
 
 .services-alignment {
@@ -617,7 +619,14 @@ border: none;
     border-radius: 15px;
     width: 100%;
     height: 100%;
+    transition: 0.2s;
 }
+
+.service:hover {
+   background-color: #0077B6;
+}
+
+
 
 @media screen and (max-width: 1000px) {
     .services-cards {
@@ -636,6 +645,7 @@ border: none;
 
 
 /*-----------------------------------Footer---------------------------------------------*/
+
 footer {
     text-align: center;
     display: block;
