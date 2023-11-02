@@ -43,28 +43,16 @@ let bar3 = document.querySelector(".bar3");
 
 
 let bar1anim = gsap.to(".bar1", {
-  duration: 0.2,
+  duration: 0.1,
   paused: true,
   y: -1,
 });
 
 let bar3anim = gsap.to(".bar3", {
-  duration: 0.2,
+  duration: 0.1,
   paused: true,
   y: 27,
 });
-
-
-/*
-let webburger = document.querySelector(".hamburger-menu");
-
-let webburgeranim = gsap.to(".hamburger-menu", {
-  duration: 0.2,
-  paused: true,
-  opacity: 0
-});
-
-*/
 
 hambutton.addEventListener("mouseenter", () => bar1anim.play());
 hambutton.addEventListener("mouseleave", () => bar1anim.reverse()); 
