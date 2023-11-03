@@ -170,8 +170,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -252,6 +251,8 @@ body {
 .section-donations {
   text-align: center;
   margin: auto;
+  padding: 20px;
+  padding-bottom: 50px;
 }
 .section-donations h1 {
   color: #03045E;
@@ -260,6 +261,10 @@ body {
 .section-donations h2 {
   color: #001D3D;
   font-size: 24px;
+}
+
+.donation-animation {
+  margin: auto;
 }
 
 .donation-button {
@@ -379,10 +384,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 25%;
-     object-position: 50% 25%;
+  object-fit: cover;
+  object-position: 50% 25%;
 }
 
 .card-text {
@@ -545,8 +548,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 
 .service {
@@ -676,8 +678,7 @@ footer .crediting {
   padding: 20px;
   width: 150px;
   max-height: 120px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 @media screen and (max-width: 768px) {

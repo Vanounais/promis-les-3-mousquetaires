@@ -308,6 +308,8 @@ body {
 .section-donations {
     text-align: center;
     margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
 
     h1 {
         color: #03045E;
@@ -318,6 +320,10 @@ body {
         color: #001D3D;
         font-size: 24px;
     }
+}
+
+.donation-animation {
+    margin: auto;
 }
 
 .donation {
