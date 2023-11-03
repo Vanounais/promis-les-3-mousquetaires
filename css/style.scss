@@ -2,6 +2,14 @@
 
 body {
     background-color: #CAF0F8;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;    
 }
 
 /*header {
@@ -207,6 +215,11 @@ body {
     grid-template-rows: 1fr 1fr;
     row-gap: 30px;
     column-gap: 30px;
+}
+
+p.news-text{
+
+font-size: 24px    
 }
 
 @media screen and (max-width: 768px) {
