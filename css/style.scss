@@ -703,12 +703,39 @@ margin-top: 5vh;
 
 .icon-service {
     background-image: url("/sources/médias/icon1.png");
-    background-size: contain;
+    background-size: 200px;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1;
 }
 
+.icon-service:nth-child(2) {
+    background-image: url("/sources/médias/icon8.png");
+}
+
+.icon-service:nth-child(3) {
+    background-image: url("/sources/médias/icon7.png");
+}
+
+.icon-service:nth-child(4) {
+    background-image: url("/sources/médias/icon6.png");
+}
+
+.icon-service:nth-child(5) {
+    background-image: url("/sources/médias/icon5.png");
+}
+
+.icon-service:nth-child(6) {
+    background-image: url("/sources/médias/icon4.png");
+}
+
+.icon-service:nth-child(7) {
+    background-image: url("/sources/médias/icon3.png");
+}
+
+.icon-service:nth-child(8) {
+    background-image: url("/sources/médias/icon2.png");
+}
 
 
 .service {
