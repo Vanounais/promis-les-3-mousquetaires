@@ -701,6 +701,16 @@ margin-top: 5vh;
     column-gap: 30px;
 }
 
+.icon-service {
+    background-image: url("/sources/médias/icon1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+
+
 .service {
     color: white;
     background-color: #001D3D;
@@ -711,12 +721,12 @@ margin-top: 5vh;
     width: 100%;
     height: 100%;
     transition: 0.2s;
+    opacity: 0.90;
 }
 
 .service:hover {
    background-color: #0077B6;
 }
-
 
 
 @media screen and (max-width: 1000px) {
