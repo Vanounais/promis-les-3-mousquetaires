@@ -264,7 +264,22 @@ body {
 }
 
 .donation-animation {
+  height: 400px;
+  max-width: 200px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coin {
+  max-width: 70px;
+  width: 100%;
+}
+
+.piggy {
+  width: 100%;
 }
 
 .donation-button {
