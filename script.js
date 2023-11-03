@@ -59,3 +59,33 @@ hambutton.addEventListener("mouseleave", () => bar1anim.reverse());
 
 hambutton.addEventListener("mouseenter", () => bar3anim.play());
 hambutton.addEventListener("mouseleave", () => bar3anim.reverse()); 
+
+var pigTimeline = gsap.timeline({repeat: -1, repeatDelay: 0.1,});
+
+pigTimeline.fromTo(
+  ".coin",
+  {
+    opacity: 0,
+  },
+  {
+    duration: 1,
+    opacity: 1,
+  }
+).fromTo(
+    ".coin",
+    {
+      y: -100,
+    },
+    {
+      ease: "sine.in",
+      duration: 0.5,
+      y: 100,
+    }).to(".piggy",
+    {
+      duration: 0.1,
+      y: 5,
+    }).to(".piggy",
+    {
+      duration: 0.1,
+      y: 0,
+    });

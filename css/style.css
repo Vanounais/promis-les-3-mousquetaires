@@ -294,12 +294,12 @@ p.news-text {
   font-size: 2rem;
 }
 
-.donation-animation {
-  height: 400px;
+.donation-anim {
+  height: 380px;
   max-width: 200px;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
 }
@@ -307,10 +307,12 @@ p.news-text {
 .coin {
   max-width: 70px;
   width: 100%;
+  z-index: 1;
 }
 
 .piggy {
   width: 100%;
+  z-index: 2;
 }
 
 .donation-button {
