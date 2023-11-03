@@ -796,4 +796,14 @@ footer .crediting {
   background-color: #013552;
   font-size: 24px;
   color: #CAF0F8;
+}
+
+/*-----------------------------------HubNews---------------------------------------------*/
+.newsHub-container {
+  width: 60vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.2);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }/*# sourceMappingURL=style.css.map */
