@@ -179,8 +179,7 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 
 p.news-text {
@@ -410,10 +409,8 @@ p.news-text {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 25%;
-     object-position: 50% 25%;
+  object-fit: cover;
+  object-position: 50% 25%;
 }
 
 .card-text {
@@ -583,8 +580,7 @@ p.news-text {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 
 .service {
@@ -718,8 +714,7 @@ footer .crediting {
   padding: 20px;
   width: 150px;
   max-height: 120px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 @media screen and (max-width: 768px) {
@@ -780,4 +775,14 @@ footer .crediting {
   background-color: #013552;
   font-size: 24px;
   color: #CAF0F8;
+}
+
+/*-----------------------------------HubNews---------------------------------------------*/
+.newsHub-container {
+  width: 60vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.2);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }/*# sourceMappingURL=style.css.map */
