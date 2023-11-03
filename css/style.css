@@ -2,6 +2,14 @@
 /*-----------------------STYLE GÉNÉRAUX---------------------------*/
 body {
   background-color: #CAF0F8;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-family: "Exo 2", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*header {
@@ -161,6 +169,7 @@ body {
 }
 
 .icons-alignment {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
 }
@@ -173,10 +182,18 @@ body {
   column-gap: 30px;
 }
 
+p.news-text {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 768px) {
   .services-icons {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
+  }
+  .news-link-box {
+    display: flex;
+    margin-top: 40px;
   }
 }
 .square {
@@ -211,6 +228,8 @@ body {
 .news-card {
   display: inline-block;
   color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .news .date {
   font-size: 12px;
@@ -221,6 +240,12 @@ body {
 .news-link {
   color: #001D3D;
   text-decoration: underline;
+}
+
+.news-link-box {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
 }
 
 /*----------------------------------Témoignages---------------------------------------*/
@@ -247,12 +272,18 @@ body {
   font-size: 20px;
 }
 
+.Testimonials-home-title {
+  margin-bottom: 20px;
+}
+
 /*----------------------------------Donations---------------------------------------*/
 .section-donations {
   text-align: center;
   margin: auto;
   padding: 20px;
   padding-bottom: 50px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .section-donations h1 {
   color: #03045E;
@@ -260,7 +291,7 @@ body {
 }
 .section-donations h2 {
   color: #001D3D;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 .donation-animation {
@@ -467,12 +498,15 @@ body {
 .about-description {
   text-align: center;
   font-size: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 50px 50px 50px 50px;
+  background-color: #0077B6;
+  margin-bottom: 50px;
+  border-radius: 50px;
 }
 
 .title-about {
   padding-top: 75px;
+  padding-bottom: 50px;
   font-size: 48px;
 }
 
@@ -515,6 +549,10 @@ body {
 
 .none {
   display: none;
+}
+
+.history-footer {
+  margin-top: 5vh;
 }
 
 /*-----------------------------------------404---------------------------------------*/
@@ -608,6 +646,10 @@ footer .crediting {
   background-color: #03045E;
   padding-bottom: 3vh;
   color: #ffffff;
+}
+
+.accueil-footer {
+  margin-top: 5vh;
 }
 
 .page-footer {
@@ -716,7 +758,7 @@ footer .crediting {
 }
 
 .full-info {
-  color: #001D3D;
+  color: #ffffff;
   background-color: #0077B6;
   border-radius: 20px;
   font-size: 24px;
@@ -725,8 +767,14 @@ footer .crediting {
 }
 
 .close-info-services {
+  color: #ffffff;
+  background-color: #CAF0F8;
   padding-top: 20px;
   padding-right: 20px;
+  border-radius: 100px;
+  width: 10px;
+  height: 10px;
+  margin: 10px 10px 0 0px;
 }
 
 .header-info-services {
