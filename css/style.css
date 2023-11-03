@@ -801,11 +801,36 @@ footer .crediting {
 }
 
 /*-----------------------------------HubNews---------------------------------------------*/
+.newsHub-H2 {
+  text-align: center;
+  margin: 5vh auto;
+}
+
 .newsHub-container {
   width: 60vw;
-  height: 100vh;
-  background-color: rgba(255, 0, 0, 0.2);
-  margin: 0 auto;
+  margin: 7vh auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  gap: 5vh;
+}
+
+.newsHub-cards {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  gap: 30px;
+}
+
+.newsHub-cards.picRight {
+  grid-template-columns: 5fr 4fr;
+}
+
+.newsHub-Picture {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.newsHub-Card-End {
+  background-color: #0077B6;
+  height: 2px;
+  grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */
