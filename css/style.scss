@@ -196,6 +196,7 @@ body {
 }
 
 .icons-alignment {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -213,6 +214,11 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
         }
+        .news-link-box{
+            display: flex;
+            margin-top: 40px;
+            }
+            
 }
 
 .square {
@@ -253,6 +259,8 @@ body {
     &-card {
         display: inline-block;
         color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .date {
@@ -269,7 +277,11 @@ body {
     }
 }
 
-
+.news-link-box{
+display: flex;
+flex-direction: row-reverse; 
+margin-top: 40px;
+}
 
 /*----------------------------------Témoignages---------------------------------------*/
 
@@ -302,12 +314,18 @@ body {
     }
 }
 
+.Testimonials-home-title{
+margin-bottom: 20px;    
+}
+
 /*----------------------------------Donations---------------------------------------*/
 
 
 .section-donations {
     text-align: center;
     margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
     h1 {
         color: #03045E;
@@ -316,7 +334,7 @@ body {
 
     h2 {
         color: #001D3D;
-        font-size: 24px;
+        font-size: 2rem;
     }
 }
 
@@ -536,12 +554,15 @@ border: none;
 .about-description {
     text-align: center;
     font-size: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding:50px 50px 50px 50px;
+    background-color: #0077B6;
+    margin-bottom: 50px;
+    border-radius: 50px;
 }
 
 .title-about {
     padding-top: 75px;
+    padding-bottom: 50px;
     font-size: 48px;
 }
 
@@ -694,6 +715,10 @@ footer {
     }
 }
 
+.accueil-footer{
+    margin-top: 5vh;
+}
+
 .page-footer {
     display: flex;
     justify-content: space-around;
@@ -823,8 +848,14 @@ margin: 5px;
 }
 
 .close-info-services{
+color: #ffffff;
+background-color: #CAF0F8;
 padding-top: 20px;
 padding-right: 20px;
+border-radius: 100px;
+width: 10px;
+height: 10px;
+margin: 10px 10px 0 0px;
 }
 
 .header-info-services{
