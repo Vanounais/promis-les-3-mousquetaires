@@ -319,10 +319,10 @@ p.news-text {
   border: none;
   background-color: #0077B6;
   color: white;
+  transition: 0.3s;
 }
 .donation-button:hover {
-  background-color: white;
-  color: #001D3D;
+  background-color: #001D3D;
 }
 
 /*-----------------------------------------Navbar---------------------------------------*/
