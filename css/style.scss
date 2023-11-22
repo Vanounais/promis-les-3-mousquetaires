@@ -734,6 +734,19 @@ margin-top: 5vh;
     background-image: url("/sources/médias/icon2.png");
 }
 
+.mini-service-icon{
+    background-color: #0077B6;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(200%, -60%);
+    background-image: url("/sources/médias/icon1.png");
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.2s
+}
 
 .service {
     color: white;
@@ -741,6 +754,8 @@ margin-top: 5vh;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 15px;
     width: 100%;
     height: 100%;
@@ -750,6 +765,9 @@ margin-top: 5vh;
 
 .service:hover {
    background-color: #0077B6;
+   .mini-service-icon{
+    background-color: #0077B6;
+   }
 }
 
 
