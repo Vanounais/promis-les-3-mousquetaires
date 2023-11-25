@@ -16,6 +16,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			<h2>
 				<?php the_title(); // Titre de la page ?>
 			</h2>
+		
 		<?php endif; ?>
 		
 		<?php the_content(); // Contenu principal de la page ?>
