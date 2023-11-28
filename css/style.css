@@ -176,7 +176,8 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 p.news-text {
@@ -426,8 +427,10 @@ p.news-text {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: 50% 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 25%;
+     object-position: 50% 25%;
 }
 
 .card-text {
@@ -596,7 +599,8 @@ p.news-text {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .icon-service {
@@ -786,7 +790,8 @@ footer .crediting {
   padding: 20px;
   width: 150px;
   max-height: 120px;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 @media screen and (max-width: 768px) {
