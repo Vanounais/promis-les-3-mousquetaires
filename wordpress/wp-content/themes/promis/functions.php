@@ -57,10 +57,29 @@ function add_style_and_js()  {
 		 4. false = Si un no de version doit être ajouté (généralement à false)
 		 5. true = Est-ce que le script doit-être ajouté à la fin du body. Si mis à false le script est ajouter dans le head à la place
 	*/
-	wp_enqueue_script('default', get_template_directory_uri() . '/main.js', array(), false, true);
+	wp_enqueue_script('default', get_template_directory_uri() . '/main.js?v='.time(), array(), false, true);
 
 	/* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */
 }
 
 /* Appel de la fonction ajoutant les styles et scripts */
 add_action('wp_enqueue_scripts', 'add_style_and_js'); 
+
+
+/* --- Pour ajouter classe sur les <li> --- */
+function add_menu_list_item_class($classes, $item, $args) {
+    if (property_exists($args, 'list_item_class')) {
+        $classes[] = $args->list_item_class;
+    }
+    return $classes;
+  }
+ add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
+
+/* --- Pour ajouter classe sur les <a> --- */
+ function add_additional_class_on_a($classes, $item, $args){
+    if (isset($args->link_item_class)) {
+        $classes['class'] = $args->link_item_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
