@@ -228,8 +228,6 @@ p.news-text {
 /*----------------------------------Nouvelles---------------------------------------*/
 .news {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 .news-image {
   width: 400px;
@@ -239,6 +237,8 @@ p.news-text {
   box-shadow: 10px 120px #0077B6;
 }
 .news-card {
+  width: 400px;
+  height: 300px;
   display: inline-block;
   color: white;
   margin-top: 10px;
@@ -294,14 +294,19 @@ p.news-text {
   text-align: center;
   margin: auto;
   padding: 20px;
+  background-color: #001D3D;
+  border-radius: 25px;
 }
 .section-donations h1 {
-  color: #03045E;
+  color: #CAF0F8;
   font-size: 24px;
 }
 .section-donations h2 {
-  color: #001D3D;
+  color: #CAF0F8;
   font-size: 2rem;
+}
+.section-donations h3 {
+  color: #CAF0F8;
 }
 
 .donation-anim {
@@ -864,6 +869,10 @@ footer .crediting {
 }
 
 /*-----------------------------------HubNews---------------------------------------------*/
+.center-card {
+  text-align: center;
+}
+
 .newsHub-H2 {
   text-align: center;
   margin: 5vh auto;
@@ -875,6 +884,8 @@ footer .crediting {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5vh;
+  background-color: #0077B6;
+  border-radius: 20px;
 }
 
 .newsHub-cards {
@@ -888,7 +899,8 @@ footer .crediting {
 }
 
 .newsHub-Picture {
-  width: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: 20px;
 }
 

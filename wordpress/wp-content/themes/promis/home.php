@@ -52,7 +52,11 @@ get_header(); // Affiche header.php
     <div class="news">
       <h2>Dernières Nouvelles</h2>
       <?php
-  $projects = new WP_Query('post_type=nouvelle');
+       $arguments = array( 
+        'post_type' => 'nouvelle',
+        'posts_per_page' => 3
+      );
+      $projects = new WP_Query($arguments);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
 
@@ -60,8 +64,8 @@ get_header(); // Affiche header.php
  	  <?php the_post_thumbnail("medium", array("class" => "news-image")); ?>
     <div class="card-desc">
         <h2 class="news-text"><?php the_title(); ?></h2>
-        <p class="date"><?php the_field("description_courte"); ?></p>
-        <p class="date"><?php the_field("date"); ?></p>
+        <p class="news date"><?php the_field("description_courte"); ?></p>
+        <p class="news date"><?php the_field("date"); ?></p>
       </div>
     </a>
 
@@ -80,7 +84,7 @@ get_header(); // Affiche header.php
 <h2 class="Testimonials-home-title">Témoignages</h2>
 <div class="Testimonials-card"> 
 <p class="Testimonials-text">Exposé par lequel on explique, on interprète, on juge un texte ; notes et éclaircissements destinés à faciliter l'intelligence d'un texte. Exposé par lequel on explique, on interprète, on juge un texte ; notes et éclaircissements destinés à faciliter l'intelligence d'un texte.</p>  
-<img class="Testimonials-image" src="sources/médias/writter.png">
+<img class="Testimonials-image" src="<?php bloginfo('template_url'); ?>/médias/writter.png">
 <p class="Testimonials-writter">Craig Mckay</p>
 </div>
 </div>
