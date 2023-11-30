@@ -1,13 +1,15 @@
 <?php 
 /**
  * 	Template Name: Détails de nouvelles
+ *  Template Post Type: post, page, nouvelle
  * 	Identique à page, mais avec une barre latérale
  */
 
 get_header(); // Affiche header.php
 ?>
 
-<div class="detail-news-title"><h2><?php the_title(); ?></h2>
+<div class="news-detail">
+<?php the_post_thumbnail("medium-large", array("class" => "img-news")); ?>
 <p class="detail-news-text"><?php the_content(); ?></p>
 <p class="newsHub-Text"><?php the_field("date"); ?></p>
 </div>

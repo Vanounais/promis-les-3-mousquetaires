@@ -926,4 +926,37 @@ footer .crediting {
   .newsHub-container {
     width: 80vw;
   }
+}
+/*-----------------------------------détails des nouvelles---------------------------------------------*/
+.news-detail {
+  background-color: #001D3D;
+  width: 80vw;
+  margin: auto;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.detail-news-title {
+  font-size: 36px;
+  color: white;
+}
+
+.detail-news-text {
+  font-size: 24px;
+  text-align: justify;
+  margin-left: 50px;
+  color: white;
+}
+
+.img-news {
+  text-align: center;
+  border-radius: 25px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.news-img-container {
+  text-align: center;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
