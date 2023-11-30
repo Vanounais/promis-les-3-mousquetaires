@@ -457,6 +457,14 @@ p.news-text {
 }
 
 /*-----------------------------------------Équipe---------------------------------------*/
+/*.team-bloc{
+    margin: auto;
+    text-align: center;    
+}
+
+.align-cards{
+display: inline-block;    
+}*/
 .hero-team {
   display: flex;
   justify-content: space-around;
@@ -509,14 +517,36 @@ p.news-text {
   color: #001D3D;
 }
 
+.team-cards a {
+  color: white;
+}
+.team-cards a:hover {
+  color: #001D3D;
+}
+
+.card-body {
+  color: white;
+}
+
+.team-title {
+  color: white;
+}
+
 /*-----------------------------------------À propos---------------------------------------*/
 .about-description {
-  text-align: center;
+  text-align: justify;
   font-size: 25px;
   padding: 50px 50px 50px 50px;
   background-color: #0077B6;
   margin-bottom: 50px;
   border-radius: 50px;
+  color: #ffffff;
+}
+.about-description a {
+  color: #CAF0F8;
+}
+.about-description a:hover {
+  color: #5786FF;
 }
 
 .title-about {
@@ -610,6 +640,10 @@ p.news-text {
   align-items: center;
 }
 
+.service-mini-cards {
+  text-decoration: none;
+}
+
 .services-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -619,7 +653,7 @@ p.news-text {
 }
 
 .icon-service {
-  background-image: url("/sources/médias/icon1.png");
+  background-image: url("médias/icon1.png");
   background-size: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -627,31 +661,31 @@ p.news-text {
 }
 
 .icon-service:nth-child(2) {
-  background-image: url("/sources/médias/icon8.png");
+  background-image: url("médias/icon8.png");
 }
 
 .icon-service:nth-child(3) {
-  background-image: url("/sources/médias/icon7.png");
+  background-image: url("médias/icon7.png");
 }
 
 .icon-service:nth-child(4) {
-  background-image: url("/sources/médias/icon6.png");
+  background-image: url("médias/icon6.png");
 }
 
 .icon-service:nth-child(5) {
-  background-image: url("/sources/médias/icon5.png");
+  background-image: url("médias/icon5.png");
 }
 
 .icon-service:nth-child(6) {
-  background-image: url("/sources/médias/icon4.png");
+  background-image: url("médias/icon4.png");
 }
 
 .icon-service:nth-child(7) {
-  background-image: url("/sources/médias/icon3.png");
+  background-image: url("médias/icon3.png");
 }
 
 .icon-service:nth-child(8) {
-  background-image: url("/sources/médias/icon2.png");
+  background-image: url("médias/icon2.png");
 }
 
 .mini-service-icon {
