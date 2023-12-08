@@ -50,14 +50,14 @@
 	<nav>
 		<?php 
 		get_template_part( 'partials/navbar' );
-		get_template_part( 'partials/heroGenerique' );
+		//get_template_part( 'partials/heroGenerique' );
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-			wp_nav_menu([
+			/*wp_nav_menu([
 				'theme_location'=> 'main-menu',
 				'menu_class'    => 'navbar-nav',
 				'list_item_class'  => 'nav-item',
 				'link_item_class'     => 'nav-link',
-			  ]);
+			  ]);*/
 		?>
 	</nav>
 
