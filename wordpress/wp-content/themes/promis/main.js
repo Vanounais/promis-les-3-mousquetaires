@@ -14,7 +14,7 @@ if(localStorage.getItem("etatBanniere") != null){
 
 
 /*----------------------------------------------------- Swiper ------------------------------------------------------*/
-
+if(document.getElementById("hero-swiper") != undefined){
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   pagination: {
@@ -30,9 +30,11 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false,
   },
 });
+};
 
 /*----------------------------------------------------- Navbar Ham ------------------------------------------------------*/
 
+if(document.querySelector(".navbar-toggler") != undefined){
 
 let hambutton = document.querySelector(".navbar-toggler");
 
@@ -60,6 +62,7 @@ hambutton.addEventListener("mouseleave", () => bar1anim.reverse());
 
 hambutton.addEventListener("mouseenter", () => bar3anim.play());
 hambutton.addEventListener("mouseleave", () => bar3anim.reverse()); 
+};
 
 var pigTimeline = gsap.timeline({repeat: -1, repeatDelay: 0.1,});
 
