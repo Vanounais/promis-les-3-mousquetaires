@@ -1,4 +1,6 @@
 <section>
-  <h2>404</h2>
-	<img src="https://media.giphy.com/media/3HLMNi9U0yb4CDldVO/giphy.gif" alt="404">
+<div class="er404-container">
+        <h1 class="er404-h1">404</h1>
+        <div class="er404-div">Promis ne trouve pas la page que vous désirez.</div>
+    </div>
 </section>
