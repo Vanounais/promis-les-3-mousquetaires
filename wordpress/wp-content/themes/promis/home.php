@@ -6,7 +6,7 @@
 
 get_header(); // Affiche header.php
 ?>
-<div class="swiper-container">
+<div class="swiper-container" id="hero-swiper">
   <div class="swiper mySwiper">
       <div class="swiper-wrapper">
       <?php
