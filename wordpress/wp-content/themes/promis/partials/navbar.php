@@ -13,7 +13,7 @@
       <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Accueil</a>
           <a class="nav-link" href="#">Hub de nouvelles</a>
-          <a class="nav-link" href="#">Hub de services</a>
+          <a class="nav-link" href="<?php echo esc_url('services-hub.php'); ?>">Hub de services</a>
           <a class="nav-link" href="#">Équipe</a>
           <a class="nav-link" href="#">À propos</a>
           <a class="nav-link" href="#">Histoire</a>

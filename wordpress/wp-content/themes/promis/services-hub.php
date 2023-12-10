@@ -11,7 +11,7 @@ get_header(); // Affiche header.php
   <div class="services-alignment">
   <div class="services-cards">
 <?php
-  $projects = new WP_Query('post_type=service');
+  $projects = new WP_Query('post_type=hub-service');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>	
 	 <div class="icon-service"><a class="service-mini-cards" href="<?php the_post_thumbnail(); ?>">
