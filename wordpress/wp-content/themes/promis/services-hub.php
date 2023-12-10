@@ -14,8 +14,8 @@ get_header(); // Affiche header.php
   $projects = new WP_Query('post_type=service');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>	
-	 <div class="icon-service"><a class="service-mini-cards" href="<?php the_permalink() ?>">
-   <div class="service"><h3><?php the_field("nom_du_service"); ?></h3><p><?php the_field("description_service"); ?></p></div></a></div>
+	 <div class="icon-service"><a class="service-mini-cards" href="<?php the_post_thumbnail(); ?>">
+   <div class="service"><h3><?php the_title(); ?></h3><p><?php the_content(); ?></p></div></a></div>
 	
 
 <?php
