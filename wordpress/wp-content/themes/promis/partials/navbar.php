@@ -11,13 +11,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          <a class="nav-link active" aria-current="page" href="">Accueil</a>
           <a class="nav-link" href="#">Hub de nouvelles</a>
-          <a class="nav-link" href="<?php echo esc_url('services-hub.php'); ?>">Hub de services</a>
-          <a class="nav-link" href="#">Équipe</a>
-          <a class="nav-link" href="#">À propos</a>
-          <a class="nav-link" href="#">Histoire</a>
-          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="h">Hub de services</a>
+          <a class="nav-link" href="equipes">Équipe</a>
+          <a class="nav-link" href="a-propos">À propos</a>
+          <a class="nav-link" href="histoire">Histoire</a>
+          <a class="nav-link" href="faq">FAQ</a>
           <a class="donation" href="https://www.canadahelps.org/fr/organismesdebienfaisance/promis/">Donation<svg
               xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-piggy-bank"
               viewBox="0 0 16 16">
