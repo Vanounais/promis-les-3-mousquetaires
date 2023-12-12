@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="">Accueil</a>
-          <a class="nav-link" href="#">Hub de nouvelles</a>
+          <a class="nav-link" href="h">Hub de nouvelles</a>
           <a class="nav-link" href="h">Hub de services</a>
           <a class="nav-link" href="equipes">Équipe</a>
           <a class="nav-link" href="a-propos">À propos</a>
