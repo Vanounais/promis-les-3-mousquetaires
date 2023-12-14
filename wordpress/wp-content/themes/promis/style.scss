@@ -302,7 +302,6 @@ font-size: 24px
 
     &-link {
         color: #001D3D;
-        text-decoration: underline;
     }
 }
 
@@ -310,6 +309,7 @@ font-size: 24px
 display: flex;
 flex-direction: row-reverse; 
 margin-top: 40px;
+text-decoration: none;
 }
 
 /*----------------------------------Témoignages---------------------------------------*/
