@@ -30,11 +30,15 @@ get_header(); // Affiche header.php
 <div class="services-icons">
 
 <?php
-  $projects = new WP_Query('post_type=service');
+  $args = array('post_type' => 'hub-service', 'orderBy' => 'date','order' => 'asc');
+  $projects = new WP_Query($args);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
 
-  <div class="square"><p><?php the_title(); ?></p><?php the_post_thumbnail( 'thumbnail', array("class" => "icon" )); ?></div>
+  <div class="square">
+    <p><?php the_title(); ?></p>
+    <?php the_post_thumbnail( 'thumbnail', array("class" => "icon" )); ?>
+  </div>
     
 <?php
   endwhile; 
