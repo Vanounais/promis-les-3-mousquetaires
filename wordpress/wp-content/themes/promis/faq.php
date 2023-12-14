@@ -11,10 +11,11 @@ get_header(); // Affiche header.php
 <div class="container">
   <div class="row">
     <div class="accordion accordion-flush" id="accordionFlushExample">
-           <?php
-  $projects = new WP_Query('post_type=faq');
-  while ($projects->have_posts()) : $projects->the_post(); 
-?>
+      <?php
+        $args = array('post_type' => 'faq', 'orderBy' => 'date','order' => 'asc');
+        $projects = new WP_Query($args);
+        while ($projects->have_posts()) : $projects->the_post(); 
+      ?>
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php the_field("id"); ?>" aria-expanded="false" aria-controls="flush-collapseOne">

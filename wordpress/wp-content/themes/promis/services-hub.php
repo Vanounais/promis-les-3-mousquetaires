@@ -11,13 +11,13 @@ get_header(); // Affiche header.php
   <div class="services-alignment">
   <div class="services-cards">
 <?php
-  $projects = new WP_Query('post_type=hub-service');
+  $args = array('post_type' => 'hub-service', 'orderBy' => 'date','order' => 'asc');
+  $projects = new WP_Query($args);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>	
 	 <div class="icon-service" style="background-image:url(<?php get_the_post_thumbnail_url();?>);"><a class="service-mini-cards" href="<?php the_post_thumbnail(); ?>">
    <div class="service"><h3><?php the_title(); ?></h3><p><?php the_content(); ?></p></div></a></div>
 	
-
 <?php
   endwhile; 
   wp_reset_postdata(); 
