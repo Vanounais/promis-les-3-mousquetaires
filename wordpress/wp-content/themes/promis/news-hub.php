@@ -28,7 +28,6 @@ get_header(); // Affiche header.php
  	  <?php the_post_thumbnail("medium-large", array("class" => "newsHub-Picture")); ?>
     <div class="newsHub-Text">
         <h3 class="newsHub-Text"><?php the_title(); ?></h3>
-        <p class="newsHub-Text"><?php the_field("description_courte"); ?></p>
         <p class="newsHub-Text"><?php the_field("date"); ?></p>
       </div>
     </a>

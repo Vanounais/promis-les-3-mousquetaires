@@ -68,7 +68,6 @@ get_header(); // Affiche header.php
       <?php the_post_thumbnail("medium", array("class" => "news-image")); ?>
       <div class="card-desc">
         <h2 class="news-text"><?php the_title(); ?></h2>
-        <p class="news date"><?php the_field("description_courte"); ?></p>
         <p class="news date"><?php the_field("date"); ?></p>
       </div>
     </a>
