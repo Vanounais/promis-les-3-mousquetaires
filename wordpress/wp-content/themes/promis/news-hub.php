@@ -12,11 +12,11 @@ get_header(); // Affiche header.php
       <div class="newsHub-Picture-Container">
 
 	  <?php
-  $projects = new WP_Query('post_type=nouvelle');
+  $projects = new WP_Query('post_type=hub-nouvelle');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
 <div class="center-card">
-      <a class="news-card" href="<?php the_permalink() ?>">
+      <a class="news-card" href="<?php echo the_permalink($the_post); ?>">
  	  <?php the_post_thumbnail("medium-large", array("class" => "newsHub-Picture")); ?>
     <div class="newsHub-Text">
         <h3 class="newsHub-Text"><?php the_title(); ?></h3>

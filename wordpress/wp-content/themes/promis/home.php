@@ -37,7 +37,7 @@ get_header(); // Affiche header.php
 
   <div class="square">
     <p><?php the_title(); ?></p>
-    <?php the_post_thumbnail( 'thumbnail', array("class" => "icon" )); ?>
+    <?php the_post_thumbnail( 'thumbnail', array('class' => 'icon' )); ?>
   </div>
     
 <?php
