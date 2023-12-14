@@ -15,8 +15,14 @@ get_header(); // Affiche header.php
   $projects = new WP_Query($args);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>	
-	 <div class="icon-service" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>');"><a class="service-mini-cards">
-   <div class="service"><h3><?php the_title(); ?></h3><p><?php the_content(); ?></p></div></a></div>
+	<div class="icon-service" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>');">
+    <a class="service-mini-cards">
+      <div class="service">
+        <h3><?php the_title(); ?></h3>
+        <p><?php the_content(); ?></p>
+      </div>
+    </a>
+  </div>
 	
 <?php
   endwhile; 
