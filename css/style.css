@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/*
+Theme Name: Promis - Les 3 Mousquetaires
+Author: Nicolas St-martin, Jérémy Cholette, Viktor Zhuravlev
+Author URI: none
+Description: Thème de notre site web pour le client promis
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 /*-----------------------STYLE GÉNÉRAUX---------------------------*/
 body {
   background-color: #CAF0F8;
@@ -206,14 +221,13 @@ p.news-text {
 .icon {
   margin: auto;
   width: 50%;
+  height: 50%;
 }
 
 /*----------------------------------Swiper---------------------------------------*/
 /*----------------------------------Nouvelles---------------------------------------*/
 .news {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 .news-image {
   width: 400px;
@@ -223,6 +237,8 @@ p.news-text {
   box-shadow: 10px 120px #0077B6;
 }
 .news-card {
+  width: 400px;
+  height: 300px;
   display: inline-block;
   color: white;
   margin-top: 10px;
@@ -278,14 +294,19 @@ p.news-text {
   text-align: center;
   margin: auto;
   padding: 20px;
+  background-color: #001D3D;
+  border-radius: 25px;
 }
 .section-donations h1 {
-  color: #03045E;
+  color: #CAF0F8;
   font-size: 24px;
 }
 .section-donations h2 {
-  color: #001D3D;
+  color: #CAF0F8;
   font-size: 2rem;
+}
+.section-donations h3 {
+  color: #CAF0F8;
 }
 
 .donation-anim {
@@ -424,8 +445,6 @@ p.news-text {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: 50% 25%;
 }
@@ -438,6 +457,14 @@ p.news-text {
 }
 
 /*-----------------------------------------Équipe---------------------------------------*/
+/*.team-bloc{
+    margin: auto;
+    text-align: center;    
+}
+
+.align-cards{
+display: inline-block;    
+}*/
 .hero-team {
   display: flex;
   justify-content: space-around;
@@ -490,14 +517,36 @@ p.news-text {
   color: #001D3D;
 }
 
+.team-cards a {
+  color: white;
+}
+.team-cards a:hover {
+  color: #001D3D;
+}
+
+.card-body {
+  color: white;
+}
+
+.team-title {
+  color: white;
+}
+
 /*-----------------------------------------À propos---------------------------------------*/
 .about-description {
-  text-align: center;
+  text-align: justify;
   font-size: 25px;
   padding: 50px 50px 50px 50px;
   background-color: #0077B6;
   margin-bottom: 50px;
   border-radius: 50px;
+  color: #ffffff;
+}
+.about-description a {
+  color: #CAF0F8;
+}
+.about-description a:hover {
+  color: #5786FF;
 }
 
 .title-about {
@@ -591,6 +640,10 @@ p.news-text {
   align-items: center;
 }
 
+.service-mini-cards {
+  text-decoration: none;
+}
+
 .services-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -600,7 +653,7 @@ p.news-text {
 }
 
 .icon-service {
-  background-image: url("/sources/médias/icon1.png");
+  background-image: url("médias/icon1.png");
   background-size: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -608,31 +661,31 @@ p.news-text {
 }
 
 .icon-service:nth-child(2) {
-  background-image: url("/sources/médias/icon8.png");
+  background-image: url("médias/icon8.png");
 }
 
 .icon-service:nth-child(3) {
-  background-image: url("/sources/médias/icon7.png");
+  background-image: url("médias/icon7.png");
 }
 
 .icon-service:nth-child(4) {
-  background-image: url("/sources/médias/icon6.png");
+  background-image: url("médias/icon6.png");
 }
 
 .icon-service:nth-child(5) {
-  background-image: url("/sources/médias/icon5.png");
+  background-image: url("médias/icon5.png");
 }
 
 .icon-service:nth-child(6) {
-  background-image: url("/sources/médias/icon4.png");
+  background-image: url("médias/icon4.png");
 }
 
 .icon-service:nth-child(7) {
-  background-image: url("/sources/médias/icon3.png");
+  background-image: url("médias/icon3.png");
 }
 
 .icon-service:nth-child(8) {
-  background-image: url("/sources/médias/icon2.png");
+  background-image: url("médias/icon2.png");
 }
 
 .mini-service-icon {
@@ -747,7 +800,7 @@ footer .crediting {
     flex-direction: column;
   }
 }
-.goofy-line {
+.footer-line {
   margin: auto;
   width: 90%;
   background-color: black;
@@ -850,6 +903,10 @@ footer .crediting {
 }
 
 /*-----------------------------------HubNews---------------------------------------------*/
+.center-card {
+  text-align: center;
+}
+
 .newsHub-H2 {
   text-align: center;
   margin: 5vh auto;
@@ -861,6 +918,8 @@ footer .crediting {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5vh;
+  background-color: #0077B6;
+  border-radius: 20px;
 }
 
 .newsHub-cards {
@@ -874,7 +933,8 @@ footer .crediting {
 }
 
 .newsHub-Picture {
-  width: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: 20px;
 }
 
@@ -900,4 +960,37 @@ footer .crediting {
   .newsHub-container {
     width: 80vw;
   }
+}
+/*-----------------------------------détails des nouvelles---------------------------------------------*/
+.news-detail {
+  background-color: #001D3D;
+  width: 80vw;
+  margin: auto;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.detail-news-title {
+  font-size: 36px;
+  color: white;
+}
+
+.detail-news-text {
+  font-size: 24px;
+  text-align: justify;
+  margin-left: 50px;
+  color: white;
+}
+
+.img-news {
+  text-align: center;
+  border-radius: 25px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.news-img-container {
+  text-align: center;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
