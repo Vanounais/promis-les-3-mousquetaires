@@ -57,16 +57,16 @@ get_header(); // Affiche header.php
       <h2>Dernières Nouvelles</h2>
       <?php
        $arguments = array( 
-        'post_type' => 'nouvelle',
+        'post_type' => 'hub-nouvelle',
         'posts_per_page' => 3
       );
       $projects = new WP_Query($arguments);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
 
-      <a class="news-card" href="<?php the_permalink() ?>">
- 	  <?php the_post_thumbnail("medium", array("class" => "news-image")); ?>
-    <div class="card-desc">
+    <a class="news-card" href="<?php the_permalink() ?>">
+      <?php the_post_thumbnail("medium", array("class" => "news-image")); ?>
+      <div class="card-desc">
         <h2 class="news-text"><?php the_title(); ?></h2>
         <p class="news date"><?php the_field("description_courte"); ?></p>
         <p class="news date"><?php the_field("date"); ?></p>
@@ -104,7 +104,9 @@ get_header(); // Affiche header.php
     <img class="coin" src="<?php bloginfo('template_url'); ?>/médias/dollar.png" alt="coin">
     <img class="piggy" src="<?php bloginfo('template_url'); ?>/médias/piggybank.png" alt="piggy">
   </div>
-<button class="donation-button col-4 mt-4">Faire une donation</button>
+  <a href="https://www.canadahelps.org/fr/organismesdebienfaisance/promis/">
+  <button class="donation-button col-4 mt-4">Faire une donation</button>
+  </a>
 </div>
 </div>
 </div>

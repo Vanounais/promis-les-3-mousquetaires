@@ -19,7 +19,7 @@
       <a href="index.html">FAQ</a>
   </div>
   <div class="links">
-      <a class="donation" href="index.html">Dons</a>
+      <a class="donation" href="https://www.canadahelps.org/fr/organismesdebienfaisance/promis/">Dons</a>
       <img src="<?php bloginfo('template_url'); ?>/médias/instagram.png" alt="instagram">
       <img src="<?php bloginfo('template_url'); ?>/médias/facebook.png" alt="instagram">
       <img src="<?php bloginfo('template_url'); ?>/médias/linkedin.png" alt="instagram">
