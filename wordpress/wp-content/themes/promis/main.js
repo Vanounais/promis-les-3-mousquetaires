@@ -95,7 +95,83 @@ pigTimeline.fromTo(
   });
 
 /*----------------------------------------------------- Hub de Nouvelles ---------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------- afficher plus---------------------------------------------*/
+
 const typeSelection = document.querySelector(".dateFilter");
 let body = document.querySelector("body");
 let all = document.querySelector(".newsHub-Picture-Container");
-let seeMore = document.querySelector("#voirPLus");
+let seeMore = document.querySelector("#voirPlus");
+let defaultMax = 6;
+
+seeMore.addEventListener("click", addNews);
+
+function addNews(){
+  defaultMax += 3;
+  all.innerHTML = "";
+  let value1 = selectType.value;
+  fetch(`/promis-les-3-mousquetaires/wordpress/wp-json/wp/v2/nouvelle?orderby=date&order=${value1}&_embed`)
+  .then(response => response.json())
+  .then((data1) =>{
+    console.log(defaultMax);
+  if (defaultMax > data1.lenght){
+    defaultMax = data1.lenght
+  }
+  for (let i=0; i<defaultMax; i++){
+    let link1 = data1[i].link;
+    let thumbnail1 = data1[i]._embedded['wp:featuredmedia'][0].source_url;
+    let title1 = data1[i].acf.formation_titre;
+    let date1 = data1[i].acf.date;
+
+    all.innerHTML += `<div class="center-card">
+    <a class="news-card" href="${link1}">
+   <img src="${thumbnail1}" class="newsHub-Picture">
+  <div class="newsHub-Text">
+      <h3 class="newsHub-Text">${title1}</h3>
+      <p class="newsHub-Text">${date1}</p>
+    </div>
+  </a>
+</div>`
+  }
+})
+};
+
+/*----------------------------------------------------- filtrer ---------------------------------------------*/
+
+typeSelection.addEventListener("change", Filter);
+
+function Filter(element){
+  all.innerHTML = "";
+
+  let filterElement = element.target;
+  let value = filterElement.value;
+  console.log(filterElement);
+  console.log(value);
+  console.log("test");
+
+  fetch(`/promis-les-3-mousquetaires/wordpress/wp-json/wp/v2/nouvelle?orderby=date&order=${value}&_embed`)
+  .then(response => response.json())
+  .then((data) => { console.log(data[0].link);
+    console.log(defaultMax);
+    for (let i=0; i<defaultMax; i++){
+      let link = data[i].link;
+      let thumbnail = data[i]._embedded['wp:featuredmedia'][0].source_url;
+      let title = data[i].acf.formation_titre;
+      let date = data[i].acf.date;
+
+      all.innerHTML += `<div class="center-card">
+      <a class="news-card" href="${link}">
+     <img src="${thumbnail}" class="newsHub-Picture">
+    <div class="newsHub-Text">
+        <h3 class="newsHub-Text">${title}</h3>
+        <p class="newsHub-Text">${date}</p>
+      </div>
+    </a>
+  </div>`
+    }
+  });
+}

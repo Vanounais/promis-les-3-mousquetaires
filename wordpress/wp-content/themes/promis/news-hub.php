@@ -20,7 +20,7 @@ get_header(); // Affiche header.php
       <div class="newsHub-Picture-Container">
 
 	  <?php
-  $projects = new WP_Query('post_type=hub-nouvelle');
+  $projects = new WP_Query('post_type=nouvelle');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
 <div class="center-card">
