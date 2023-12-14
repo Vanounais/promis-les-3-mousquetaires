@@ -33,7 +33,8 @@ get_header(); // Affiche header.php
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body team-cards">
-                  <?php the_content(); ?>
+                  <div><?php the_field("profession"); ?></div>
+                  <div><?php the_content(); ?></div>
                 </div>
               </div>
             </div>
