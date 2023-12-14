@@ -1,6 +1,7 @@
 <?php 
 /**
  * 	Template Name: Service
+ * 	Template Post Type: post, page, nouvelle
  * 	Identique à page, mais avec une barre latérale
  */
 

@@ -57,7 +57,7 @@ get_header(); // Affiche header.php
       <h2>Dernières Nouvelles</h2>
       <?php
        $arguments = array( 
-        'post_type' => 'hub-nouvelle',
+        'post_type' => 'nouvelle',
         'posts_per_page' => 3
       );
       $projects = new WP_Query($arguments);
