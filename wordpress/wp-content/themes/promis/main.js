@@ -93,3 +93,9 @@ pigTimeline.fromTo(
     duration: 0.1,
     y: 0,
   });
+
+/*----------------------------------------------------- Hub de Nouvelles ---------------------------------------------*/
+const typeSelection = document.querySelector(".dateFilter");
+let body = document.querySelector("body");
+let all = document.querySelector(".newsHub-Picture-Container");
+let seeMore = document.querySelector("#voirPLus");

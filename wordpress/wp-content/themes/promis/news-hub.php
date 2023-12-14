@@ -8,7 +8,15 @@ get_header(); // Affiche header.php
 ?>
 
 <h2 class="newsHub-H2">Nos articles les plus récents</h2>
+
+
   <div class="newsHub-container">
+  <div class="dropdown">
+                <a><select name="filter" class="dateFilter">
+                    <option value="desc">Les plus récents d'abord</option>
+                    <option value="asc">Les plus anciens d'abord</option>
+                </select></a>
+            </div>
       <div class="newsHub-Picture-Container">
 
 	  <?php
@@ -25,6 +33,7 @@ get_header(); // Affiche header.php
       </div>
     </a>
 </div>
+
    
     <?php
   endwhile; 
@@ -32,6 +41,9 @@ get_header(); // Affiche header.php
 ?>
 	</div>
 	</div>
+  <div class="col-12 pe-5 voirPlus">
+                <button id="voirPlus">Voir plus ></button>
+            </div>
 	<!-- <img class="" src="sources/médias/article_1.jpeg">
       </div>
       <div class="">
