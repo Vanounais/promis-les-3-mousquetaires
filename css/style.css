@@ -252,13 +252,13 @@ p.news-text {
 }
 .news-link {
   color: #001D3D;
-  text-decoration: underline;
 }
 
 .news-link-box {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 40px;
+  text-decoration: none;
 }
 
 /*----------------------------------Témoignages---------------------------------------*/
