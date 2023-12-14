@@ -252,13 +252,13 @@ p.news-text {
 }
 .news-link {
   color: #001D3D;
-  text-decoration: underline;
 }
 
 .news-link-box {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 40px;
+  text-decoration: none;
 }
 
 /*----------------------------------Témoignages---------------------------------------*/
@@ -653,41 +653,40 @@ display: inline-block;
 }
 
 .icon-service {
-  background-image: url("médias/icon1.png");
   background-size: 200px;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
 }
 
+/*
 .icon-service:nth-child(2) {
-  background-image: url("médias/icon8.png");
+    background-image: url("médias/icon8.png");
 }
 
 .icon-service:nth-child(3) {
-  background-image: url("médias/icon7.png");
+    background-image: url("médias/icon7.png");
 }
 
 .icon-service:nth-child(4) {
-  background-image: url("médias/icon6.png");
+    background-image: url("médias/icon6.png");
 }
 
 .icon-service:nth-child(5) {
-  background-image: url("médias/icon5.png");
+    background-image: url("médias/icon5.png");
 }
 
 .icon-service:nth-child(6) {
-  background-image: url("médias/icon4.png");
+    background-image: url("médias/icon4.png");
 }
 
 .icon-service:nth-child(7) {
-  background-image: url("médias/icon3.png");
+    background-image: url("médias/icon3.png");
 }
 
 .icon-service:nth-child(8) {
-  background-image: url("médias/icon2.png");
-}
-
+    background-image: url("médias/icon2.png");
+} */
 .mini-service-icon {
   background-color: #001D3D;
   width: 120px;
