@@ -389,6 +389,12 @@ margin-bottom: 20px;
     }
 }
 
+@media screen and (max-width: 650px) {
+    .section-donations {
+        margin: 50px;
+    }
+}
+
 .donation-anim {
     height: 380px;
     max-width: 200px;

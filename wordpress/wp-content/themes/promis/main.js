@@ -113,8 +113,8 @@ seeMore.addEventListener("click", addNews);
 function addNews(){
   defaultMax += 3;
   all.innerHTML = "";
-  let value1 = selectType.value;
-  fetch(`/promis-les-3-mousquetaires/wordpress/wp-json/wp/v2/nouvelle?orderby=date&order=${value1}&_embed`)
+  let value1 = typeSelection.value;
+  fetch(`/promis-les-3-mousquetaires/wordpress/wp-json/wp/v2/nouvelle?orderby=date&order=${value1}&_embed&per_page=${defaultMax}`)
   .then(response => response.json())
   .then((data1) =>{
     console.log(defaultMax);
@@ -122,13 +122,14 @@ function addNews(){
     defaultMax = data1.lenght
   }
   for (let i=0; i<defaultMax; i++){
-    let link1 = data1[i].link;
+    let url1 = data1[i].link;
     let thumbnail1 = data1[i]._embedded['wp:featuredmedia'][0].source_url;
-    let title1 = data1[i].acf.formation_titre;
+    let title1 = data1[i].title.rendered;
+    console.log(title1);
     let date1 = data1[i].acf.date;
 
     all.innerHTML += `<div class="center-card">
-    <a class="news-card" href="${link1}">
+    <a class="news-card" href="${url1}">
    <img src="${thumbnail1}" class="newsHub-Picture">
   <div class="newsHub-Text">
       <h3 class="newsHub-Text">${title1}</h3>
@@ -153,18 +154,18 @@ function Filter(element){
   console.log(value);
   console.log("test");
 
-  fetch(`/promis-les-3-mousquetaires/wordpress/wp-json/wp/v2/nouvelle?orderby=date&order=${value}&_embed`)
+  fetch(`/promis-les-3-mousquetaires/wordpress/wp-json/wp/v2/nouvelle?orderby=date&order=${value}&_embed&per_page=${defaultMax}`)
   .then(response => response.json())
   .then((data) => { console.log(data[0].link);
     console.log(defaultMax);
     for (let i=0; i<defaultMax; i++){
-      let link = data[i].link;
+      let url = data[i].link;
       let thumbnail = data[i]._embedded['wp:featuredmedia'][0].source_url;
-      let title = data[i].acf.formation_titre;
+      let title = data[i].title.rendered;
       let date = data[i].acf.date;
 
       all.innerHTML += `<div class="center-card">
-      <a class="news-card" href="${link}">
+      <a class="news-card" href="${url}">
      <img src="${thumbnail}" class="newsHub-Picture">
     <div class="newsHub-Text">
         <h3 class="newsHub-Text">${title}</h3>

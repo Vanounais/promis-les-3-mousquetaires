@@ -13,14 +13,15 @@ get_header(); // Affiche header.php
   <div class="newsHub-container">
   <div class="dropdown">
                 <a><select name="filter" class="dateFilter">
-                    <option value="desc">Les plus récents d'abord</option>
-                    <option value="asc">Les plus anciens d'abord</option>
+                    <option value="asc">Les plus récents d'abord</option>
+                    <option value="desc">Les plus anciens d'abord</option>
                 </select></a>
             </div>
       <div class="newsHub-Picture-Container">
 
 	  <?php
-  $projects = new WP_Query('post_type=nouvelle');
+  $args = array('post_type' => 'nouvelle', 'posts_per_page' => 6, 'orderBy' => 'date', 'order' => 'DESC');
+  $projects = new WP_Query($args);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
 <div class="center-card">

@@ -327,6 +327,11 @@ p.news-text {
   color: #CAF0F8;
 }
 
+@media screen and (max-width: 650px) {
+  .section-donations {
+    margin: 50px;
+  }
+}
 .donation-anim {
   height: 380px;
   max-width: 200px;
