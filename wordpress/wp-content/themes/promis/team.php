@@ -19,7 +19,7 @@ get_header(); // Affiche header.php
 ?>	
 <!-- afficher la membres d'equipe-->
 <div class="card mb-3 card-team col-5 mb-5 pt-4 align-cards">
-        <img src="<?php bloginfo('template_url'); ?>/médias/blank-person.jpg" class="card-img-top team-image" alt="...">
+<?php the_post_thumbnail("medium-large", array("class" => "card-img-top team-image")); ?>
         <div class="card-body">
           <h3 class="card-title"><?php the_title(); ?></h3>
           <p class="card-text-team"><?php the_field("description-courte"); ?></p>
