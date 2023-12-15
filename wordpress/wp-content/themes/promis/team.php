@@ -8,7 +8,10 @@ get_header(); // Affiche header.php
 ?>
 
 
-<div class="team-description"><div class="team-bloc">
+<div class="team-description">
+  <?php get_template_part( 'partials/description' ); ?>
+</div>
+<div class="team-bloc">
 <?php
   $projects = new WP_Query('post_type=equipe');
   while ($projects->have_posts()) : $projects->the_post(); 

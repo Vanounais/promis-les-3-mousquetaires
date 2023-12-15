@@ -643,6 +643,17 @@ color: white;
 .team-title{
     color: white;
 }
+.team-description {
+    text-align: justify;
+    font-size: 25px;
+    padding:50px 50px 50px 50px;
+    background-color: #0077B6;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 5vw;
+
+}
 
 
 /*-----------------------------------------À propos---------------------------------------*/
@@ -1037,6 +1048,11 @@ display: flex;
 justify-content: flex-end;    
 }
 
+.services-title {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
 
 
 /*-----------------------------------FAQ---------------------------------------------*/
@@ -1157,8 +1173,3 @@ text-align: center;
 margin-bottom: 50px;
 }
 
-/*-----------------------------------description de page---------------------------------------------*/
-.description-page {
-    text-align: center;
-    margin: 5vh auto;
-}

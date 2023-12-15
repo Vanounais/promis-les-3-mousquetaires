@@ -8,6 +8,7 @@ get_header(); // Affiche header.php
 ?>
 
 <div class="nos-services">
+  <h2 class="services-title"><?php get_template_part( 'partials/description' ); ?></h2>
   <div class="services-alignment">
   <div class="services-cards">
 <?php

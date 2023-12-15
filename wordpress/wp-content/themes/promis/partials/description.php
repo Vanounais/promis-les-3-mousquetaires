@@ -1,1 +1,1 @@
-<h2 class="description-page"><?php the_field("description_page");?></h2>
+<?php the_content();?>
