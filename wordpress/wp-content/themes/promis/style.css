@@ -227,10 +227,17 @@ p.news-text {
   padding: 5px;
 }
 
+@media screen and (max-width: 395px) {
+  .square {
+    margin: auto;
+    width: 60%;
+    height: 60%;
+  }
+}
 .icon {
   margin: auto;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 /*----------------------------------Swiper---------------------------------------*/
