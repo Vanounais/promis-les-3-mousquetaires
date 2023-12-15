@@ -1,0 +1,9 @@
+{
+    "post_types": {
+      "faq": {},
+      "nouvelle": {},
+      "hub-service": {},
+      "equipe": {},
+      "histoire": {}
+    }
+  }

@@ -7,9 +7,6 @@
 get_header(); // Affiche header.php
 ?>
 
-<h2 class="newsHub-H2">Nos articles les plus récents</h2>
-
-
   <div class="newsHub-container">
   <div class="dropdown">
                 <a><select name="filter" class="dateFilter">

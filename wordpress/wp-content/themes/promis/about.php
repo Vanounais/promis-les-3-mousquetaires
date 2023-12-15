@@ -12,7 +12,7 @@ get_header(); // Affiche header.php
 <div class="container col-8">
 <div class="row">
 <div class="about-description">
-<p><?php the_content(); ?></p>
+<?php get_template_part( 'partials/description' ); ?>
 </div>
 </div>
 </div>
