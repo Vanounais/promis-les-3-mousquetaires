@@ -19,9 +19,7 @@
       <a href="index.html">FAQ</a>-->
       <?php wp_nav_menu(array(
             'theme_location' => 'menu-footer',
-            'menu_class' => 'bottom-nav',
-            'list_item_class'  => 'nav-item',
-            'link_item_class' => 'nav-link'
+            'menu_class' => 'bottom-nav'
           )); ?>
   <!--</div>-->
   <div class="links">

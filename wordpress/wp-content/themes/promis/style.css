@@ -784,10 +784,11 @@ footer a {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+  list-style-type: none;
 }
 .bottom-nav a {
   color: white;
-  margin: 5px;
+  margin: 10px;
 }
 
 .links {
