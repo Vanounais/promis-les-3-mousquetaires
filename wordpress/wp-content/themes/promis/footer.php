@@ -9,15 +9,21 @@
 <footer>
   <div class="page-footer accueil-footer">
       <img class="logo-bottom" src="<?php bloginfo('template_url'); ?>/médias/Logo.png" alt="logo">   
-  <div class="bottom-nav">
+  <!--<div class="bottom-nav">
       <a href="index.html">Accueil</a>
       <a href="index.html">Hub de nouvelles</a>
       <a href="index.html">Hub de services</a>
       <a href="index.html">Équipe</a>
       <a href="index.html">À propos</a>
       <a href="index.html">Histoire</a>
-      <a href="index.html">FAQ</a>
-  </div>
+      <a href="index.html">FAQ</a>-->
+      <?php wp_nav_menu(array(
+            'theme_location' => 'menu-footer',
+            'menu_class' => 'bottom-nav',
+            'list_item_class'  => 'nav-item',
+            'link_item_class' => 'nav-link'
+          )); ?>
+  <!--</div>-->
   <div class="links">
       <a class="donation" href="https://www.canadahelps.org/fr/organismesdebienfaisance/promis/">Dons</a>
       <img src="<?php bloginfo('template_url'); ?>/médias/instagram.png" alt="instagram">
