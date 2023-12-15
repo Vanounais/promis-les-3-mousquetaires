@@ -51,6 +51,7 @@
 		<?php 
 		get_template_part( 'partials/navbar' );
 		get_template_part( 'partials/heroGenerique' );
+		get_template_part( 'partials/description' );
 		?>
 	</nav>
 

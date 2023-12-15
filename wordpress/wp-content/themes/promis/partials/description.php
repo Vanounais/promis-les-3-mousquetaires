@@ -1,0 +1,1 @@
+<div class="description-page"><?php the_content();?></div>

@@ -44,7 +44,7 @@
   <div class="crediting ">
       <h1>Merci à nos partenaires</h1>
       <div class="logos ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/05/Fondation-Cogir-315x200.png " alt="cogir ">
+          <!--<img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/05/Fondation-Cogir-315x200.png " alt="cogir ">
           <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/Immigration_Quebec.png " alt="quebec_1 ">
           <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/CSS-Montreal.png " alt="quebec_2 ">
           <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/centraide_blanc2-300x200.png " alt="centreaide ">
@@ -58,7 +58,19 @@
           <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/BREBEUF_BLANC-340x78.png " alt="brefebeuf ">
           <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2019/09/logo_reseau_reussite_mtl-340x123.png " alt="logo_reseau_reussite_mtl ">
           <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/04/Logo_MAC.svg " alt="Mac ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/04/Logo_Le-Depots.svg " alt="Depot ">
+          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/04/Logo_Le-Depots.svg " alt="Depot ">-->
+          <?php
+            $args = array('post_type' => 'sponsor', 'orderBy' => 'date','order' => 'asc');
+            $projects = new WP_Query($args);
+            while ($projects->have_posts()) : $projects->the_post(); 
+          ?>
+          <a href="<?php the_field("sponsor_link"); ?>">
+            <?php the_post_thumbnail("small", array("class" => "credits")); ?>
+          </a>
+          <?php
+            endwhile; 
+            wp_reset_postdata(); 
+          ?>  
       </div>
       <h5>Droits d'auteurs: 3 Mousquetaires ©2023 </h2>
   </div>
