@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: History
- *  Template Post Type: evenement
+ *  Template Post Type: page, Page, evenement
  */
 
  get_header(); // Affiche header.php
@@ -11,10 +11,11 @@
   $projects = new WP_Query('post_type=evenement');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
- <?php the_post_thumbnail("medium-large", array("class" => "img-news")); ?>
- <?php the_title(); ?>
- <?php the_content(); ?>
- <p class=""><?php the_field(""); ?></p>
+ <?php the_post_thumbnail(); ?>
+ 
+ <div class="history-events">
+ <div class="history-description"><h2><?php the_title(); ?></h2><?php the_content(); ?></div>
+ </div>
  <?php endwhile; wp_reset_postdata(); ?>
  
  <?php

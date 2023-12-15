@@ -606,14 +606,22 @@ display: inline-block;
   margin-bottom: 50px;
 }
 
+.history-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .history-description {
-  margin: auto;
+  max-width: 765px;
+  margin: 20px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 100px;
   padding-right: 100px;
   background-color: #0077B6;
-  color: #001D3D;
+  color: #ffffff;
   padding: 30px;
   border-radius: 50px;
 }
@@ -669,6 +677,22 @@ display: inline-block;
 }
 
 /*-----------------------------------------Hub de services---------------------------------------*/
+.dateFilter {
+  background-color: #001D3D;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#voirPlus {
+  background-color: #001D3D;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
 .nos-services {
   margin-top: 5vh;
   margin-bottom: 5vh;

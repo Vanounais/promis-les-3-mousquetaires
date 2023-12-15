@@ -102,10 +102,10 @@ pigTimeline.fromTo(
 
 /*----------------------------------------------------- afficher plus---------------------------------------------*/
 
-const typeSelection = document.querySelector(".sortbydater");
+const typeSelection = document.querySelector(".dateFilter");
 let body = document.querySelector("body");
 let all = document.querySelector(".newsHub-Picture-Container");
-let seeMore = document.querySelector("#showmore");
+let seeMore = document.querySelector("#voirPlus");
 let defaultMax = 6;
 
 seeMore.addEventListener("click", addNews);
