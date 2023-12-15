@@ -9,8 +9,11 @@ get_header(); // Affiche header.php
 ?>
 
 <div class="news-detail">
+<!-- afficher l'image de nouvelles -->
 <?php the_post_thumbnail("medium-large", array("class" => "img-news")); ?>
+<!-- afficher la description -->
 <p class="detail-news-text"><?php get_template_part( 'partials/description' ); ?></p>
+<!-- afficher la date -->
 <p class="newsHub-Text"><?php the_field("date"); ?></p>
 </div>
 

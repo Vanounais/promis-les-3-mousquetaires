@@ -16,7 +16,7 @@ get_header(); // Affiche header.php
   $projects = new WP_Query('post_type=equipe');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>	
-
+<!-- afficher la membres d'equipe-->
 <div class="card mb-3 card-team col-5 mb-5 pt-4 align-cards">
         <img src="<?php bloginfo('template_url'); ?>/médias/blank-person.jpg" class="card-img-top team-image" alt="...">
         <div class="card-body">

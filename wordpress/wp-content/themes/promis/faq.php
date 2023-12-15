@@ -16,6 +16,7 @@ get_header(); // Affiche header.php
         $projects = new WP_Query($args);
         while ($projects->have_posts()) : $projects->the_post(); 
       ?>
+      <!-- afficher chaque question avec sa reponses -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php the_field("id"); ?>" aria-expanded="false" aria-controls="flush-collapseOne">

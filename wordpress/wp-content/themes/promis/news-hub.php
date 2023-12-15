@@ -21,6 +21,7 @@ get_header(); // Affiche header.php
   $projects = new WP_Query($args);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
+<!-- afficher les nouvelles dans le hub de nouvelles -->
 <div class="center-card">
       <a class="news-card" href="<?php echo the_permalink($the_post); ?>">
  	  <?php the_post_thumbnail("medium-large", array("class" => "newsHub-Picture")); ?>
@@ -41,16 +42,6 @@ get_header(); // Affiche header.php
                 <button id="voirPlus">Voir plus ></button>
             </div>
 	</div>
-  
-	<!-- <img class="" src="sources/médias/article_1.jpeg">
-      </div>
-      <div class="">
-        <h3>Début d'une nouvelle vie.</h3>
-        <div>Exposé par lequel on explique, on interprète, on juge un texte ; notes et éclaircissements destinés à faciliter l'intelligence d'un texte. Exposé par lequel on explique, on interprète, on juge un texte ; notes et éclaircissements destinés à faciliter l'intelligence d'un texte.</div>
-      </div>
-      <div class="newsHub-Card-End"></div>
-    </div>
-  </div> -->
 
 <?php
 if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ? 

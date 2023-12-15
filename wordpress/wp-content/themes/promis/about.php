@@ -7,11 +7,13 @@
 get_header(); // Affiche header.php
 ?>
 <div class="history-video">
+<!-- afficher la video -->
 <iframe class="history-video-frame" width="800px" height="450px" src="<?php the_field("lien"); ?>" title="PROMIS à vol d&#39;oiseau." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 <div class="container col-8">
 <div class="row">
 <div class="about-description">
+<!-- prendre la description de a propos -->
 <?php get_template_part( 'partials/description' ); ?>
 </div>
 </div>

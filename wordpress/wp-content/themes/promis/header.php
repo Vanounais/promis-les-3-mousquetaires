@@ -49,7 +49,9 @@
         </div>
 	<nav>
 		<?php 
+		/* afficher la navbar */
 		get_template_part( 'partials/navbar' );
+		/* afficher le hero */
 		get_template_part( 'partials/heroGenerique' );
 		?>
 	</nav>

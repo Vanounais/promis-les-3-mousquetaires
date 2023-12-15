@@ -1,3 +1,4 @@
+<!-- la page 404-->
 <section>
 <div class="er404-container">
         <h1 class="er404-h1">404</h1>
