@@ -1091,10 +1091,14 @@ font-size: 24px;
 
 /*-----------------------------------HubNews---------------------------------------------*/
 
-
-
 .center-card{
-text-align: center;
+    text-align: center;
+    background-color: #0077B6;
+    margin: 20px;
+    border-radius: 20px;
+        a{
+           margin-bottom: 100px !important;
+    }
 }
 
 .newsHub-H2{
@@ -1108,7 +1112,6 @@ text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 5vh;
-    background-color: #0077B6;
     border-radius: 20px;
 }
 
@@ -1116,6 +1119,7 @@ text-align: center;
     display: grid;
     grid-template-columns: 4fr 5fr;
     gap: 30px;
+    
 }
 
 .newsHub-cards.picRight{
@@ -1152,7 +1156,7 @@ height: 80%;
     .newsHub-container {
         width: 80vw;
     }
-}
+} 
 
 /*-----------------------------------détails des nouvelles---------------------------------------------*/
 

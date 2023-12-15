@@ -9,7 +9,7 @@ get_header(); // Affiche header.php
 
   <div class="newsHub-container">
   <div class="dropdown">
-                <a><select name="filter" class="dateFilter">
+                <a><select name="filter" class="sortbydate">
                     <option value="asc">Les plus récents d'abord</option>
                     <option value="desc">Les plus anciens d'abord</option>
                 </select></a>
@@ -37,10 +37,11 @@ get_header(); // Affiche header.php
   wp_reset_postdata(); 
 ?>
 	</div>
-	</div>
-  <div class="col-12 pe-5 voirPlus">
-                <button id="voirPlus">Voir plus ></button>
+  <div class="col-12 pe-5 showmore">
+                <button id="showmore">Voir plus ></button>
             </div>
+	</div>
+  
 	<!-- <img class="" src="sources/médias/article_1.jpeg">
       </div>
       <div class="">

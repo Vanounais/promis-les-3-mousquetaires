@@ -958,6 +958,12 @@ footer a {
 /*-----------------------------------HubNews---------------------------------------------*/
 .center-card {
   text-align: center;
+  background-color: #0077B6;
+  margin: 20px;
+  border-radius: 20px;
+}
+.center-card a {
+  margin-bottom: 100px !important;
 }
 
 .newsHub-H2 {
@@ -971,7 +977,6 @@ footer a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5vh;
-  background-color: #0077B6;
   border-radius: 20px;
 }
 
