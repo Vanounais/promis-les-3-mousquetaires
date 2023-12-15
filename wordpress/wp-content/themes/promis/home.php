@@ -86,7 +86,7 @@ get_header(); // Affiche header.php
 <div class="Testimonials mb-3">
 <h2 class="Testimonials-home-title">Témoignages</h2>
 <div class="Testimonials-card"> 
-<p class="Testimonials-text">Exposé par lequel on explique, on interprète, on juge un texte ; notes et éclaircissements destinés à faciliter l'intelligence d'un texte. Exposé par lequel on explique, on interprète, on juge un texte ; notes et éclaircissements destinés à faciliter l'intelligence d'un texte.</p>  
+<p class="Testimonials-text"><?php the_content(); ?></p>  
 <img class="Testimonials-image" src="<?php bloginfo('template_url'); ?>/médias/writter.png">
 <p class="Testimonials-writter">Craig Mckay</p>
 </div>

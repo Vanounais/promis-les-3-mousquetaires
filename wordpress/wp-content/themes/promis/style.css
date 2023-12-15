@@ -417,7 +417,7 @@ p.news-text {
   justify-content: space-around;
   text-align: center;
   background-color: white;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .hero-team .title-team {
   padding-top: 75px;
