@@ -11,19 +11,12 @@
     <a href="https://viknic.tim-momo.com/wordpress/accueil/">
       <img class="logo-bottom" src="<?php bloginfo('template_url'); ?>/médias/Logo.png" alt="logo">   
     </a>
-  <!--<div class="bottom-nav">
-      <a href="index.html">Accueil</a>
-      <a href="index.html">Hub de nouvelles</a>
-      <a href="index.html">Hub de services</a>
-      <a href="index.html">Équipe</a>
-      <a href="index.html">À propos</a>
-      <a href="index.html">Histoire</a>
-      <a href="index.html">FAQ</a>-->
+    <!-- afficher le menu du footer -->
       <?php wp_nav_menu(array(
             'theme_location' => 'menu-footer',
             'menu_class' => 'bottom-nav'
           )); ?>
-  <!--</div>-->
+    <!-- assigner les liens au medias -->
   <div class="links">
       <a class="donation" href="https://www.canadahelps.org/fr/organismesdebienfaisance/promis/">Dons</a>
       <a href="https://www.facebook.com/promisimmigration/?ref=br_rs">
@@ -46,21 +39,7 @@
   <div class="crediting ">
       <h1>Merci à nos partenaires</h1>
       <div class="logos ">
-          <!--<img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/05/Fondation-Cogir-315x200.png " alt="cogir ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/Immigration_Quebec.png " alt="quebec_1 ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/CSS-Montreal.png " alt="quebec_2 ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/centraide_blanc2-300x200.png " alt="centreaide ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/CSS-MargueriteBourgeon.png " alt="quebec_3 ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/StateStreet2.png " alt="StateStreet ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/service-canada_blanc-340x190.png " alt="ServiceCanada ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/investissement_quebec_logo-340x73.png " alt="investissement_quebec ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/Montreal_blanc-340x73.png " alt="Montreal_blanc ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/Fudicie-340x81.png " alt="Fiducie ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/BRASSEUR_DU_MONDE_BLANC-180x200.png " alt="Brasseurs_Monde ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2018/09/BREBEUF_BLANC-340x78.png " alt="brefebeuf ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2019/09/logo_reseau_reussite_mtl-340x123.png " alt="logo_reseau_reussite_mtl ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/04/Logo_MAC.svg " alt="Mac ">
-          <img class="credits " src="https://promis.qc.ca/wp-content/uploads/2023/04/Logo_Le-Depots.svg " alt="Depot ">-->
+        <!-- afficher les logos de partenaires -->
           <?php
             $args = array('post_type' => 'sponsor', 'orderBy' => 'date','order' => 'asc');
             $projects = new WP_Query($args);

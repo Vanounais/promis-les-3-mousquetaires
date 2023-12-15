@@ -10,6 +10,7 @@
   $projects = new WP_Query('post_type=evenement');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
+<!-- afficher les évenements dans histoire -->
  <?php the_post_thumbnail(); ?>
  
  <div class="history-events">

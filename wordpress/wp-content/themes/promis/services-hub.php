@@ -8,6 +8,7 @@ get_header(); // Affiche header.php
 ?>
 
 <div class="nos-services">
+  <!-- afficher la description du hub de service -->
   <h2 class="services-title"><?php get_template_part( 'partials/description' ); ?></h2>
   <div class="services-alignment">
   <div class="services-cards">
@@ -16,6 +17,7 @@ get_header(); // Affiche header.php
   $projects = new WP_Query($args);
   while ($projects->have_posts()) : $projects->the_post();
 ?>	
+<!-- afficher les services dans hub service -->
 	<div class="icon-service" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>');">
     <a class="service-mini-cards" href="<?php echo the_permalink($the_post); ?>">
       <div class="service">

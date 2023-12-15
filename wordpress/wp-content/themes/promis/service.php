@@ -7,6 +7,7 @@
 get_header(); // Affiche header.php
 ?>
 <div class="news-detail">
+<!-- afficher la description du service -->
 <p class=""><?php get_template_part( 'partials/description' ); ?></p>
 </div>
 
