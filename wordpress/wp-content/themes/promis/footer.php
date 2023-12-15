@@ -24,9 +24,15 @@
   <!--</div>-->
   <div class="links">
       <a class="donation" href="https://www.canadahelps.org/fr/organismesdebienfaisance/promis/">Dons</a>
-      <img src="<?php bloginfo('template_url'); ?>/médias/instagram.png" alt="instagram">
+      <a href="https://www.facebook.com/promisimmigration/?ref=br_rs">
+        <img src="<?php bloginfo('template_url'); ?>/médias/instagram.png" alt="instagram">
+      </a>
+      <a href="https://www.facebook.com/promisimmigration/?ref=br_rs">
       <img src="<?php bloginfo('template_url'); ?>/médias/facebook.png" alt="instagram">
+      </a>
+      <a href="https://www.linkedin.com/company/promis-immigration/">
       <img src="<?php bloginfo('template_url'); ?>/médias/linkedin.png" alt="instagram">
+      </a>
   </div>
 </div>
   <div class="footer-line"></div>
