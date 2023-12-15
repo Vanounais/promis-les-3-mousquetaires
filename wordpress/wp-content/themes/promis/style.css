@@ -228,6 +228,7 @@ p.news-text {
 /*----------------------------------Nouvelles---------------------------------------*/
 .news {
   text-align: center;
+  text-decoration: none;
 }
 .news-image {
   width: 400px;
@@ -243,22 +244,30 @@ p.news-text {
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 20px;
 }
 .news .date {
   font-size: 12px;
 }
 .news-text {
-  font-size: 30px;
+  font-size: 20px;
 }
 .news-link {
   color: #001D3D;
-  text-decoration: underline;
+}
+
+.card-desc {
+  text-decoration: none;
+}
+.card-desc .news-text {
+  text-decoration: none;
 }
 
 .news-link-box {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 40px;
+  text-decoration: none;
 }
 
 /*----------------------------------Témoignages---------------------------------------*/
@@ -653,41 +662,40 @@ display: inline-block;
 }
 
 .icon-service {
-  background-image: url("médias/icon1.png");
   background-size: 200px;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
 }
 
+/*
 .icon-service:nth-child(2) {
-  background-image: url("médias/icon8.png");
+    background-image: url("médias/icon8.png");
 }
 
 .icon-service:nth-child(3) {
-  background-image: url("médias/icon7.png");
+    background-image: url("médias/icon7.png");
 }
 
 .icon-service:nth-child(4) {
-  background-image: url("médias/icon6.png");
+    background-image: url("médias/icon6.png");
 }
 
 .icon-service:nth-child(5) {
-  background-image: url("médias/icon5.png");
+    background-image: url("médias/icon5.png");
 }
 
 .icon-service:nth-child(6) {
-  background-image: url("médias/icon4.png");
+    background-image: url("médias/icon4.png");
 }
 
 .icon-service:nth-child(7) {
-  background-image: url("médias/icon3.png");
+    background-image: url("médias/icon3.png");
 }
 
 .icon-service:nth-child(8) {
-  background-image: url("médias/icon2.png");
-}
-
+    background-image: url("médias/icon2.png");
+} */
 .mini-service-icon {
   background-color: #001D3D;
   width: 120px;
@@ -750,6 +758,10 @@ footer .crediting {
   background-color: #03045E;
   padding-bottom: 3vh;
   color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .accueil-footer {

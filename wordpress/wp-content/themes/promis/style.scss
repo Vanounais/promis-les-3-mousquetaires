@@ -273,6 +273,7 @@ font-size: 24px
 
 .news {
     text-align: center;
+    text-decoration: none; 
 
     &-image {
      
@@ -290,6 +291,7 @@ font-size: 24px
         color: white;
         margin-top: 10px;
         margin-bottom: 10px;
+        margin-right: 20px;
     }
 
     .date {
@@ -297,11 +299,18 @@ font-size: 24px
     }
 
     &-text {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     &-link {
         color: #001D3D;
+    }
+}
+
+.card-desc {
+    text-decoration: none;
+    .news-text {
+        text-decoration: none; 
     }
 }
 
@@ -863,6 +872,10 @@ footer {
         background-color: #03045E;
         padding-bottom: 3vh;
         color: #ffffff;
+    }
+    a {
+        color: #ffffff;
+        text-decoration: none; 
     }
 }
 

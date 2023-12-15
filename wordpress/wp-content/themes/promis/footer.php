@@ -27,7 +27,7 @@
 </div>
   <div class="footer-line"></div>
   <div class="contact-info">
-      <p class="address">3333 Côte Ste-Catherine Rd. Montreal (Quebec), H3T 1C8</p>
+      <a style="text-decoration:none;" href="https://maps.app.goo.gl/mA2fRUvRsfmivS3t9" class="address">3333 Côte Ste-Catherine Rd. Montreal (Quebec), H3T 1C8</a>
       <p class="phone-number">Téléphone: (514) 345-1615</p>
       <p class="fax">Fax: (514) 345-1088</p>
   </div>
