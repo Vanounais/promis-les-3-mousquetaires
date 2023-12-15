@@ -24,10 +24,6 @@ a {
   font-family: "Exo 2", sans-serif;
 }
 
-/*header {
-    background-color: #0077B6;
-}
-*/
 /*-----------------------BANNIÈRE---------------------------*/
 /*bannière étudiante début*/
 .banner {
@@ -56,61 +52,7 @@ a {
 /*bannière étudiante fin*/
 /*-----------------------HEADER---------------------------*/
 /*Menu de navigation début*/
-/*
-.full-menu {
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .vertical-line {
-        border-left: 1.5px solid black;
-        height: 25px;
-    }
-    .pages{
-        color: #001D3D;   
-        &:hover{
-            color: #ffffff;
-           } 
-        }    
-
-}
-
-.donation {
-    background-color: #5786FF;
-    border: none;
-    color: white;
-    width: 80px;
-    height: 25px;
-    border-radius: 5px;
-    &-hamburger{
-        background-color: #5786FF;
-        border: none;
-        color: #ffffff;    
-    }
-    &:hover{
-    color: #ffffff; 
-    background-color: #03045E;   
-    }
-}
-
-.language {
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-    z-index: 9;
-    &-hamburger{
-        width: 25px;
-        height: 25px;  
-    }
-}
-
-.dropdown-menu{
-    text-align: center;    
-    background-color: #CAF0F8;
-    }
-*/
 @media screen and (max-width: 1200px) {
-  /*.mobile-menu { display: none;} */
   .banner {
     font-size: 18px;
   }
@@ -125,23 +67,11 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  /*.full-menu { display: none; }
-  .mobile-menu{display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }*/
   .banner {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 375px) {
-  /*.full-menu { display: none; }
-  .mobile-menu{display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .logo-hamburger-menu{
-      margin: 5px;    
-      }*/
   .banner {
     font-size: 20px;
   }
@@ -175,7 +105,7 @@ a {
   height: 400px;
 }
 
-/*Section de Services*/
+/*--------------- Section de Services ---------------------*/
 .services {
   text-align: center;
   margin-top: 100px;
@@ -415,13 +345,6 @@ p.news-text {
   color: #001D3D;
 }
 
-/*
-
-.hamburger-menu {
-    width: 30px;
-    height: 30px;
-    opacity: 1; 
-} */
 .navbar-toggler {
   background-color: #0077B6;
 }
@@ -496,14 +419,6 @@ p.news-text {
 }
 
 /*-----------------------------------------Équipe---------------------------------------*/
-/*.team-bloc{
-    margin: auto;
-    text-align: center;    
-}
-
-.align-cards{
-display: inline-block;    
-}*/
 .hero-team {
   display: flex;
   justify-content: space-around;
@@ -739,34 +654,6 @@ display: inline-block;
   opacity: 1;
 }
 
-/*
-.icon-service:nth-child(2) {
-    background-image: url("médias/icon8.png");
-}
-
-.icon-service:nth-child(3) {
-    background-image: url("médias/icon7.png");
-}
-
-.icon-service:nth-child(4) {
-    background-image: url("médias/icon6.png");
-}
-
-.icon-service:nth-child(5) {
-    background-image: url("médias/icon5.png");
-}
-
-.icon-service:nth-child(6) {
-    background-image: url("médias/icon4.png");
-}
-
-.icon-service:nth-child(7) {
-    background-image: url("médias/icon3.png");
-}
-
-.icon-service:nth-child(8) {
-    background-image: url("médias/icon2.png");
-} */
 .mini-service-icon {
   background-color: #001D3D;
   width: 120px;
