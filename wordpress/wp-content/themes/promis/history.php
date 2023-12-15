@@ -6,7 +6,6 @@
 
  get_header(); // Affiche header.php
  ?>
- 
  <?php
   $projects = new WP_Query('post_type=evenement');
   while ($projects->have_posts()) : $projects->the_post(); 

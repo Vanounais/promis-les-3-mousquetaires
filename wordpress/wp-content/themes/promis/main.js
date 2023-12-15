@@ -176,3 +176,17 @@ function Filter(element){
     }
   });
 }
+
+/*------------------Animation Histoire---------------------*/
+
+var timebox = gsap.timeline({repeat: -1, repeatDelay: 0.1,});
+
+timebox.fromTo(
+".box",
+{
+  opacity: 0,
+},
+{
+  duration: 1,
+  opacity: 1,
+});
