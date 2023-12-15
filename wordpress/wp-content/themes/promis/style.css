@@ -175,9 +175,18 @@ a {
   height: 400px;
 }
 
+/*Section de Services*/
 .services {
   text-align: center;
   margin-top: 100px;
+}
+
+.services-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.services-link:hover {
+  color: #ffffff;
 }
 
 .icons-alignment {

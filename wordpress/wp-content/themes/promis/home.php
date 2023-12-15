@@ -24,7 +24,7 @@ get_header(); // Affiche header.php
   </div>
 </div>
 <!--Section des services-->
-    <div class="services">
+<div class="services">
 <h2>Services Offerts</h2>
 <div class="icons-alignment">
 <div class="services-icons">
@@ -34,12 +34,12 @@ get_header(); // Affiche header.php
   $projects = new WP_Query($args);
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
-
+<a class="services-link" href="<?php echo the_permalink($the_post); ?>">
   <div class="square">
     <p><?php the_title(); ?></p>
     <?php the_post_thumbnail( 'thumbnail', array('class' => 'icon' )); ?>
   </div>
-    
+  </a>   
 <?php
   endwhile; 
   wp_reset_postdata(); 
