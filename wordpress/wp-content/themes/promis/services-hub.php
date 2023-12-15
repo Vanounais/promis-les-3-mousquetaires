@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: Hub de services
- * 	Template Post Type: hub-service
+ * 	Template Post Type: hub-service, page
  */
 
 get_header(); // Affiche header.php
@@ -34,12 +34,6 @@ get_header(); // Affiche header.php
 </div>
 </div>
 </div>
-
-
-
-
- 
-    
 
 
 <?php
