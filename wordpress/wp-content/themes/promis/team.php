@@ -13,6 +13,7 @@ get_header(); // Affiche header.php
 </div>
 <div class="team-bloc">
 <?php
+  $index = 1;
   $projects = new WP_Query('post_type=equipe');
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>	
@@ -23,16 +24,16 @@ get_header(); // Affiche header.php
           <h3 class="card-title"><?php the_title(); ?></h3>
           <p class="card-text-team"><?php the_field("description-courte"); ?></p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary btn-team" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn btn-primary btn-team" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $index; ?>">
             En savoir plus
           </button>
           
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal<?php echo $index; ?>" tabindex="-1" aria-labelledby="exampleModalLabel<?php echo $index; ?>" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content team-card-info">
                 <div class="modal-header team-title">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel"><?php the_title(); ?></h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel<?php echo $index; ?>"><?php the_title(); ?></h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body team-cards">
@@ -48,6 +49,7 @@ get_header(); // Affiche header.php
 	  </div>
 	  </div>
 <?php
+  $index++;
   endwhile; 
   wp_reset_postdata(); 
 ?>  
