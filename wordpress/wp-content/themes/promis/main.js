@@ -108,7 +108,7 @@ let all = document.querySelector(".newsHub-Picture-Container");
 let seeMore = document.querySelector("#voirPlus");
 let defaultMax = 6;
 
-seeMore.addEventListener("click", addNews);
+if(seeMore){seeMore.addEventListener("click", addNews); };
 
 function addNews(){
   defaultMax += 3;
@@ -143,7 +143,7 @@ function addNews(){
 
 /*----------------------------------------------------- filtrer ---------------------------------------------*/
 
-typeSelection.addEventListener("change", Filter);
+if(typeSelection){typeSelection.addEventListener("change", Filter);};
 
 function Filter(element){
   all.innerHTML = "";
@@ -179,14 +179,33 @@ function Filter(element){
 
 /*------------------Animation Histoire---------------------*/
 
-var timebox = gsap.timeline({repeat: -1, repeatDelay: 0.1,});
 
-timebox.fromTo(
-".box",
-{
-  opacity: 0,
-},
-{
-  duration: 1,
-  opacity: 1,
-});
+
+var birbanim = gsap.timeline({repeat: -1, repeatDelay: 0.1,});
+
+
+
+birbanim.fromTo(
+  ".birb",
+  {
+    x: -100,
+    y: 0,
+    rotationX: 0,
+  },
+  {
+    duration: 3,
+    x: 3000,
+    y: 200,
+    rotationX: 0,
+  }).to(".birb", 
+  {
+    rotationX: 180,
+    duration: 0.1,
+    rotation: 140,
+  }).to(".birb", 
+  {
+    x: -1000,
+    y: 400,
+    duration: 3,
+  });
+  

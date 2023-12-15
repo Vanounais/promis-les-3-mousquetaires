@@ -609,13 +609,6 @@ color: white;
 
 /*-----------------------------------------Histoire---------------------------------------*/
 
-.box{
-    width: 30px;
-    height: 30px;
-    background-color: #03045E;
-}
-
-
 .history-video {
     display: flex;
     align-items: center;
@@ -674,6 +667,7 @@ margin-top: 5vh;
 .er404-body {
     margin: 0;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .er404-container{
@@ -681,6 +675,7 @@ margin-top: 5vh;
     border-radius: 20px;
     padding: 10px;
     margin: 20vh 10vw;
+    overflow-x: hidden;
 }
 
 .er404-h1{
@@ -693,6 +688,10 @@ margin-top: 5vh;
     text-align: center;
 }
 
+.birb{
+    max-width: 100px;
+    transform: rotate(30deg);
+}
 
 /*-----------------------------------------Hub de services---------------------------------------*/
 .dateFilter{

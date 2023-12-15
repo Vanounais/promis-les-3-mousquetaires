@@ -514,12 +514,6 @@ p.news-text {
 }
 
 /*-----------------------------------------Histoire---------------------------------------*/
-.box {
-  width: 30px;
-  height: 30px;
-  background-color: #03045E;
-}
-
 .history-video {
   display: flex;
   align-items: center;
@@ -577,6 +571,7 @@ p.news-text {
 .er404-body {
   margin: 0;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .er404-container {
@@ -584,6 +579,7 @@ p.news-text {
   border-radius: 20px;
   padding: 10px;
   margin: 20vh 10vw;
+  overflow-x: hidden;
 }
 
 .er404-h1 {
@@ -595,6 +591,11 @@ p.news-text {
   font-size: clamp(16px, 2vw, 24px);
   font-weight: bold;
   text-align: center;
+}
+
+.birb {
+  max-width: 100px;
+  transform: rotate(30deg);
 }
 
 /*-----------------------------------------Hub de services---------------------------------------*/
