@@ -991,9 +991,14 @@ footer a {
   background-color: #0077B6;
   margin: 20px;
   border-radius: 20px;
+  transition-duration: 1s;
 }
 .center-card a {
   margin-bottom: 100px !important;
+}
+
+.center-card:hover {
+  background-color: #03045E;
 }
 
 .newsHub-H2 {
