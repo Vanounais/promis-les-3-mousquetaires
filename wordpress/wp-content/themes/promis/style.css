@@ -785,6 +785,7 @@ footer a {
   align-items: center;
   padding: 20px;
   list-style-type: none;
+  margin-bottom: 0;
 }
 .bottom-nav a {
   color: white;
