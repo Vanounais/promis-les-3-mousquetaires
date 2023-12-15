@@ -10,7 +10,7 @@ get_header(); // Affiche header.php
 
 <div class="news-detail">
 <?php the_post_thumbnail("medium-large", array("class" => "img-news")); ?>
-<p class="detail-news-text"><?php the_content(); ?></p>
+<p class="detail-news-text"><?php get_template_part( 'partials/description' ); ?></p>
 <p class="newsHub-Text"><?php the_field("date"); ?></p>
 </div>
 

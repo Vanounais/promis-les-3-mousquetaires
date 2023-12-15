@@ -7,7 +7,7 @@
 get_header(); // Affiche header.php
 ?>
 <div class="news-detail">
-<p class=""><?php the_content(); ?></p>
+<p class=""><?php get_template_part( 'partials/description' ); ?></p>
 </div>
 
 <?php
