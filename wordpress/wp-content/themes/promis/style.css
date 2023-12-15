@@ -226,6 +226,14 @@ p.news-text {
 
 /*----------------------------------Swiper---------------------------------------*/
 /*----------------------------------Nouvelles---------------------------------------*/
+.news-card {
+  text-decoration: none;
+  margin-bottom: 150px !important;
+}
+.news-card:hover {
+  color: #ffffff;
+}
+
 .news {
   text-align: center;
   text-decoration: none;
@@ -247,7 +255,7 @@ p.news-text {
   margin-right: 20px;
 }
 .news .date {
-  font-size: 12px;
+  font-size: 15px;
 }
 .news-text {
   font-size: 20px;
@@ -261,6 +269,7 @@ p.news-text {
 }
 .card-desc .news-text {
   text-decoration: none;
+  padding-left: 35px;
 }
 
 .news-link-box {
