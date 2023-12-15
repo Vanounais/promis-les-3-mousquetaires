@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="<?php the_permalink() ?>"><img src="<?php bloginfo('template_url'); ?>/médias/Logo.png"></a>
+    <a class="navbar-brand" href="https://viknic.tim-momo.com/wordpress/accueil/"><img src="<?php bloginfo('template_url'); ?>/médias/Logo.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">

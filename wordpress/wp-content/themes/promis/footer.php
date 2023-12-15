@@ -8,7 +8,9 @@
 
 <footer>
   <div class="page-footer accueil-footer">
+    <a href="https://viknic.tim-momo.com/wordpress/accueil/">
       <img class="logo-bottom" src="<?php bloginfo('template_url'); ?>/médias/Logo.png" alt="logo">   
+    </a>
   <!--<div class="bottom-nav">
       <a href="index.html">Accueil</a>
       <a href="index.html">Hub de nouvelles</a>
